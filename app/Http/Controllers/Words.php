@@ -17,7 +17,6 @@ class Words extends Controller
     public function index()
     {
         //
-
     }
 
     /**
@@ -47,8 +46,7 @@ class Words extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($ID)
-            return Words::find($ID);
+    public function show($id)
     {
         //
     }
