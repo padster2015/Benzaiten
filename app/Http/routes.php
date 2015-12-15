@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
 Route::get('/api/v1/words/{ID?}', 'Words@index');
