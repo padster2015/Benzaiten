@@ -14,11 +14,11 @@ class Employees extends Controller {
      *
      * @return Response
      */
-    public function index($id = null) {
-        if ($id == null) {
-            return Employee::orderBy('id', 'asc')->get();
+    public function index($ID = null) {
+        if ($ID == null) {
+            return Employee::orderBy('ID', 'asc')->get();
         } else {
-            return $this->show($id);
+            return $this->show($ID);
         }
     }
 
