@@ -16,11 +16,7 @@ class Words extends Controller
      */
     public function index()
     {
-        if ($ID == null) {
-            return Words::orderBy('ID', 'asc')->get();
-        } else {
-            return $this->show($ID);
-        }
+        //
 
     }
 
