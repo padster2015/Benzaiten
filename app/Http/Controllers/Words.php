@@ -16,7 +16,12 @@ class Words extends Controller
      */
     public function index()
     {
-        //
+        if ($id == null) {
+            return Words::orderBy('ID', 'asc')->get();
+        } else {
+            return $this->show($id);
+        }
+
     }
 
     /**
@@ -46,7 +51,8 @@ class Words extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($ID)
+            return Words::find($ID);
     {
         //
     }
