@@ -1,2 +1,2 @@
-var app = angular.module('employeeRecords', [])
-        .constant('API_URL', 'http://localhost/angulara/public/api/v1/');
+var app = angular.module('wordRecords', [])
+        .constant('API_URL', 'http://192.168.99.100:32781/api/v1/');

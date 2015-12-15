@@ -29,15 +29,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="employee in employees">
-                        <td>{{  employee.id }}</td>
-                        <td>{{ employee.name }}</td>
-                        <td>{{ employee.email }}</td>
-                        <td>{{ employee.contact_number }}</td>
-                        <td>{{ employee.position }}</td>
+                    <tr ng-repeat="word in words">
+                        <td>{{  word.id }}</td>
+                        <td>{{ word.name }}</td>
+                        <td>{{ word.email }}</td>
+                        <td>{{ word.contact_number }}</td>
+                        <td>{{ word.position }}</td>
                         <td>
-                            <button class="btn btn-default btn-xs btn-detail" ng-click="toggle('edit', employee.id)">Edit</button>
-                            <button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(employee.id)">Delete</button>
+                            <button class="btn btn-default btn-xs btn-detail" ng-click="toggle('edit', word.id)">Edit</button>
+                            <button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(word.id)">Delete</button>
                         </td>
                     </tr>
                 </tbody>
@@ -105,12 +105,10 @@
         </div>
 
         <!-- Load Javascript Libraries (AngularJS, JQuery, Bootstrap) -->
-        <script src="<?= asset('app/lib/angular/angular.min.js') ?>"></script>
-        <script src="<?= asset('js/jquery.min.js') ?>"></script>
-        <script src="<?= asset('js/bootstrap.min.js') ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         
         <!-- AngularJS Application Scripts -->
         <script src="<?= asset('app/app.js') ?>"></script>
-        <script src="<?= asset('app/controllers/employees.js') ?>"></script>
+        <script src="<?= asset('app/controllers/words.js') ?>"></script>
     </body>
 </html>
