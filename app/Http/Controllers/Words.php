@@ -15,7 +15,7 @@ class Employees extends Controller {
      * @return Response
      */
     public function index($ID = null) {
-    //
+    echo "hello";
     }
 
     /**
