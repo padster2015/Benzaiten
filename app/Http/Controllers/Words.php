@@ -16,8 +16,7 @@ class Words extends Controller
      */
     public function index()
     {
-        //
-    }
+        echo "hello";    }
 
     /**
      * Show the form for creating a new resource.
