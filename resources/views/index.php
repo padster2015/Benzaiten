@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" ng-app="employeeRecords">
     <head>
-        <title>Laravel 5 AngularJS CRUD Example</title>
+        <title>Rakuten Marketing : Translation Platform</title>
 
       <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -13,7 +13,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h2>Employees Database</h2>
+        <h2>Benzatain - Rakuten Marketing Translation</h2>
         <div  ng-controller="employeesController">
 
             <!-- Table-to-load-the-data Part -->
@@ -21,10 +21,10 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Contact No</th>
-                        <th>Position</th>
+                        <th>English Word</th>
+                        <th>French</th>
+                        <th>German</th>
+                        <th>Japanese</th>
                         <th><button id="btn-add" class="btn btn-primary btn-xs" ng-click="toggle('add', 0)">Add New Employee</button></th>
                     </tr>
                 </thead>
@@ -37,7 +37,6 @@
                         <td>{{ word.position }}</td>
                         <td>
                             <button class="btn btn-default btn-xs btn-detail" ng-click="toggle('edit', word.id)">Edit</button>
-                            <button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(word.id)">Delete</button>
                         </td>
                     </tr>
                 </tbody>
