@@ -33,6 +33,7 @@
      <style>
 tr:nth-child(odd)       { background-color:#eee; !important }
 tr:nth-child(even)      { background-color:#fff; !important}
+tr th { background-color: Black; color:white;}
      </style>
     </head>
     
