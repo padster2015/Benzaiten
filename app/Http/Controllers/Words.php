@@ -19,7 +19,7 @@ class Words extends Controller
      
                $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->take(25)->get();
 
-        echo json_encode($phrases,JSON_NUMERIC_CHECK);->take(25)
+        echo json_encode($phrases,JSON_NUMERIC_CHECK);
                     //return view('user.index', ['users' => $users]);
           }
 
