@@ -25,16 +25,16 @@
                         <th>French</th>
                         <th>German</th>
                         <th>Japanese</th>
-                        <th><button id="btn-add" class="btn btn-primary btn-xs" ng-click="toggle('add', 0)">Add New Employee</button></th>
+                        <th><button id="btn-add" class="btn btn-primary btn-xs" ng-click="toggle('add', 0)">Add New Word</button></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="word in words">
                         <td>{{  word.id }}</td>
-                        <td>{{ word.name }}</td>
-                        <td>{{ word.email }}</td>
-                        <td>{{ word.contact_number }}</td>
-                        <td>{{ word.position }}</td>
+                        <td>{{ word.Source }}</td>
+                        <td>{{ word.French }}</td>
+                        <td>{{ word.German }}</td>
+                        <td>{{ word.Japanese     }}</td>
                         <td>
                             <button class="btn btn-default btn-xs btn-detail" ng-click="toggle('edit', word.id)">Edit</button>
                         </td>

@@ -16,7 +16,46 @@ class Words extends Controller
      */
     public function index()
     {
-        echo "hello";    }
+     
+     header('Content-Type: text/html; charset=utf-8');
+ error_reporting(E_ALL);
+$host="localhost"; 
+$username="fitr"; 
+$password="H097729422a!"; 
+$db_name="Benzaiten"; 
+$con=mysql_connect("$host", "$username", "$password")or die("cannot connect");
+mysql_set_charset('utf8');
+mysql_select_db("$db_name")or die("cannot select DB");
+
+
+$sql = ""; 
+$result = mysql_query($sql);
+
+$json = array();
+
+$email= $_GET["account"];
+$token=$_GET["pwd"];
+
+$fetch = mysql_query("SELECT * FROM `Master` "); 
+
+while ($row = mysql_fetch_array($fetch, MYSQL_ASSOC)) {
+    
+        $row_array['ID'] = $row['ID'];
+            $row_array['Source'] = $row['Source'];
+                $row_array['Target'] = $row['Target'];
+                $row_array['Last_edit_by'] = $row['Last_edit_by'];
+                $row_array['Date_Time_Edit'] = $row['Date_Time_Edit'];
+                $row_array['Previous_Edit'] = $row['Previous_Edit'];
+                $row_array['Platform'] = $row['Platform'];
+                $row_array['Product'] = $row['Product'];
+
+ array_push($json,$row_array);
+    }
+
+echo json_encode($json,JSON_NUMERIC_CHECK);
+
+
+          }
 
     /**
      * Show the form for creating a new resource.
