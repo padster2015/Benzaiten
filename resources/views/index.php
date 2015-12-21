@@ -39,7 +39,7 @@
     <!-- Google Tag Manager -->
 
 <!-- End Google Tag Manager -->
-    <header class="animated slideInDown" style="position:fixed;">
+    <header class="animated slideInDown" style="position:fixed; background-color:#FFF;">
     
     
     <img src="http://marketing.rakuten.com/img/common/logo/2.gif" width="150"   align="absmiddle" style="float:left;">
