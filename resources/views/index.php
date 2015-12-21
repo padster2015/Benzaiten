@@ -63,7 +63,6 @@
        <div class="grid" >   
          <div class="col-sm-10">
           <!-- Language Flag -->  
-          <p class="pname">{{x.ID}}</p>
             </div>
             
 
@@ -80,11 +79,11 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="x in names">
-                        <td>{{ word.ID }}</td>
-                        <td>{{ word.Source }}</td>
-                        <td>{{ word.Target }}</td>
-                        <td>{{ word.Last_edit_by }}</td>
-                        <td>{{ word.Platform }}</td>
+                        <td>{{ x.ID }}</td>
+                        <td>{{ x.Source }}</td>
+                        <td>{{ x.Target }}</td>
+                        <td>{{ x.Last_edit_by }}</td>
+                        <td>{{ x.Platform }}</td>
                         <td>
                             <button class="btn btn-default btn-xs btn-detail" ng-click="toggle('edit', word.id)">Edit</button>
                         </td>
