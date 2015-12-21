@@ -84,7 +84,7 @@ td {
                         <th width="200">French</th>
                         <th width="200">German</th>
                         <th width="200">Japanese</th>
-                        <th><button id="btn-add" href="#myModal" class="btn btn-primary btn-xs" data-toggle="modal" ng-click="#myModal">Add New Word</button></th>
+                        <th><button id="btn-add" class="btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">Add New Word</button></th>
                     </tr>
                 </thead>
                 <tbody>
