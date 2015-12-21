@@ -66,7 +66,7 @@
             </div>
             
 
-<table class="table" width="960">
+<table class="table" style=width:"960px !important">
                 <thead>
                     <tr>
                         <th width="5%"sortable="sortable">ID</th>
