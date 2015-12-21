@@ -70,7 +70,7 @@
                 <thead>
                     <tr>
                         <th width="5%"sortable="sortable">ID</th>
-                        <th width="25%">English Word</th>
+                        <th width="100px">English Word</th>
                         <th width="25%">French</th>
                         <th width="25%">German</th>
                         <th width="25%">Japanese</th>
@@ -80,7 +80,7 @@
                 <tbody>
                     <tr ng-repeat="x in names">
                         <td width="5%">{{ x.ID }}</td>
-                        <td width="25%">{{ x.Source }}</td>
+                        <td width="100px">{{ x.Source }}</td>
                         <td width="25%">{{ x.Target }}</td>
                         <td width="25%">{{ x.Last_edit_by }}</td>
                         <td width="25%">{{ x.Platform }}</td>
