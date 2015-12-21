@@ -17,12 +17,13 @@ class Words extends Controller
     public function index()
     {
      
-               $phrases = DB::table('Master')->get();
+    $phrases = DB::table('Master')->get();
                echo "ok";
 
-               foreach ($phrases as $word) {
-                    echo $word->ID; 
-    
+               $results = json_decode(json_encode($phrases), true);
+
+    echo json_encode($json,JSON_NUMERIC_CHECK);
+
 }
 
 
