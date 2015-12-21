@@ -17,14 +17,15 @@ class Words extends Controller
     public function index()
     {
      
-        $users = DB::select('select * from `Master`', [1]);
+               $users = DB::table('Master')->get();
+               echo "ok";
 
-        //return view('Words.index', ['users' => $users]);
-
-        foreach ($users as $user) {
+               foreach ($users as $user) {
     echo $user->ID;
 }
 
+
+                    //return view('user.index', ['users' => $users]);
           }
 
     /**
