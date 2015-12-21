@@ -66,7 +66,7 @@
             </div>
             
 
-<table class="table" style=width:"960px !important">
+<table style=width:"960px !important">
                 <thead>
                     <tr>
                         <th width="5%"sortable="sortable">ID</th>
@@ -80,7 +80,7 @@
                 <tbody>
                     <tr ng-repeat="x in names">
                         <td width="5%">{{ x.ID }}</td>
-                        <td width="100px">{{ x.Source }}</td>
+                        <td width="100px" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
                         <td width="25%">{{ x.Target }}</td>
                         <td width="25%">{{ x.Last_edit_by }}</td>
                         <td width="25%">{{ x.Platform }}</td>
