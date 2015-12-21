@@ -97,7 +97,7 @@ td {
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
                         <td>
-                                                <button id="btn-add" class="btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">edit Word</button>
+                         <button class="edit btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">edit Word</button>
 
                         </td>
                     </tr>
@@ -191,10 +191,10 @@ $('#btn-add').click(function(){
 $('#myModal').modal('show')
 });
 
-$('#btn-edit').click(function(){
+
+$('.edit').click(function(){
 $('#myModal').modal('show')
 });
-
 
 </script>
    
