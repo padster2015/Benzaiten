@@ -33,7 +33,7 @@
      <style>
 tr:nth-child(odd)       { background-color:#eee; !important }
 tr:nth-child(even)      { background-color:#fff; !important}
-tr th { background-color: Black; color:white; padding:1%;}
+tr th {color:black; padding:1%;}
 td {
     padding:1%;
 }
