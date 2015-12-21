@@ -19,8 +19,7 @@ class Words extends Controller
      
                $phrases = DB::table('Master')->select('ID')->get();
 
-        echo json_encode($phrases);
-
+        echo json_encode($phrases,JSON_NUMERIC_CHECK);
                     //return view('user.index', ['users' => $users]);
           }
 
