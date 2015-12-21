@@ -17,11 +17,22 @@ class Words extends Controller
     public function index()
     {
      
-               $users = DB::table('Master')->get();
+               $phrases = DB::table('Master')->get();
                echo "ok";
 
-               foreach ($users as $user) {
-    echo $user->Source;
+               foreach ($phrases as $word) {
+                    echo $word->ID ','
+    echo $word->Source; ','
+        echo $word->Target; ','
+            echo $word->Last_edit_by ','
+                echo $word->Date_Time_Edit ','
+                    echo $word->Platform ','
+                        echo $word->Product ',';
+
+
+
+
+
 }
 
 
