@@ -118,7 +118,7 @@ td {
                                 <div class="form-group error">
                                     <label for="inputEmail3" class="col-sm-3 control-label">New Word or Phrase</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control has-error" id="name" name="name" placeholder="Word in English" value="{{name}}" 
+                                        <input type="area" class="form-control has-error" id="word" name="word" placeholder="Word in English" value="{{name}}" 
                                         ng-model="word.phrase" ng-required="true">
                                         <span class="help-inline" 
                                         ng-show="frmEmployees.name.$invalid && frmEmployees.name.$touched">Phrase field is required</span>
