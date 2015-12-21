@@ -17,7 +17,7 @@ class Words extends Controller
     public function index()
     {
      
-               $phrases = DB::table('Master')->get();
+               $phrases = DB::table('Master')->select('ID')->get();
 
         echo json_encode($phrases);
 
