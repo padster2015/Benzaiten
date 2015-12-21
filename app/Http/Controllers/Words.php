@@ -21,7 +21,6 @@ class Words extends Controller
 
         return view('user.index', ['users' => $users]);
 
-
         foreach ($users as $user) {
     echo $user->ID;
 }

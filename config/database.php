@@ -54,10 +54,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', '172.17.0.3'),
+            'host'      => env('DB_HOST', '74.208.78.114'),
             'database'  => env('DB_DATABASE', 'Benzaiten'),
-            'username'  => env('DB_USERNAME', 'maindb'),
-            'password'  => env('DB_PASSWORD', 'h097729422'),
+            'username'  => env('DB_USERNAME', 'fitw'),
+            'password'  => env('DB_PASSWORD', 'H097729422a!'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
