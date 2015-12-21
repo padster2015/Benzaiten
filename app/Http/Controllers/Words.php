@@ -17,8 +17,14 @@ class Words extends Controller
     public function index()
     {
      
-     echo "hello";
+        $users = DB::select('select * from `Master`', [1]);
 
+        return view('user.index', ['users' => $users]);
+
+
+        foreach ($users as $user) {
+    echo $user->ID;
+}
 
           }
 
