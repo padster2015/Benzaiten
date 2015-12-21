@@ -90,7 +90,7 @@ td {
                 <tbody>
                     <tr ng-repeat="x in names">
                         <td width="5%">{{ x.ID }}</td>
-                        <td width="100" style="WORD-BREAK:BREAK-WORD;">{{ x.Source }}</td>
+                        <td width="100" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
                         <td width="25%">{{ x.Target }}</td>
                         <td width="25%">{{ x.Last_edit_by }}</td>
                         <td width="25%">{{ x.Platform }}</td>
