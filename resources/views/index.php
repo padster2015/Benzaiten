@@ -4,7 +4,7 @@
   
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Fit Award - User Profile</title>
+        <title>Rakuten Marketing Translation Platform</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Bootstrap Template for a user settings, stats or profile page. This example has a tabbed layout, table with pagination, and various user stats panels." />
@@ -61,12 +61,10 @@
 <div class="app-content" id="data-items" ng-app="" ng-controller="customersController"> 
        <div class="grid" ng-repeat="x in names">   
          <div class="col-sm-10">
-          <!-- Language Flag -->  <img title="profile image" class="img-circle img-responsive" width="150" heigh="150" src="" style="width:60px !important;float:left; height:60px !important; border-color: #b1e046;
-    border-style: solid;
-    border-width: 1px;"><h1 class="pname">{{x.ID}}</h1>
+          <!-- Language Flag -->  
+          <p class="pname">{{x.ID}}</p>
             </div>
             
-            <div class="col-sm-2"></div>
         
          
       
