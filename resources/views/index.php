@@ -91,9 +91,9 @@ td {
                     <tr ng-repeat="x in names">
                         <td width="5%">{{ x.ID }}</td>
                         <td width="100" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
-                        <td width="25%">{{ x.Target }}</td>
-                        <td width="25%">{{ x.Last_edit_by }}</td>
-                        <td width="25%">{{ x.Platform }}</td>
+                        <td width="25%">{{ x.French }}</td>
+                        <td width="25%">{{ x.German }}</td>
+                        <td width="25%">{{ x.Japanese }}</td>
                         <td>
                             <button class="btn btn-default btn-xs btn-detail" ng-click="toggle('edit', word.id)">Edit</button>
                         </td>
