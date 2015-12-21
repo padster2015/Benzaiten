@@ -56,6 +56,8 @@ echo json_encode($json,JSON_NUMERIC_CHECK);
 
 
           }
+        //
+    }
 
     /**
      * Show the form for creating a new resource.

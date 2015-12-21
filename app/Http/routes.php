@@ -20,3 +20,10 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/api/v1/words/{ID?}', 'Words@index');
+
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);
+
