@@ -17,7 +17,7 @@ class Words extends Controller
     public function index()
     {
      
-                $phrases = DB::table('Dictionary')->paginate(15);
+                $phrases = DB::table('Dictionary')->simplePaginate(15);
         echo json_encode($phrases,JSON_NUMERIC_CHECK);
 
 
