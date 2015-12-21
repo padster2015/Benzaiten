@@ -5,11 +5,12 @@
 
 <div ng-app="myApp" ng-controller="customersCtrl"> 
 
-<ul>
-  <li ng-repeat="x in names">
-    {{ x.ID + ', ' + x.Source }}
-  </li>
-</ul>
+<table>
+  <tr ng-repeat="x in names">
+    <td>{{ x.ID }}</td>
+    <td>{{ x.Source }}</td>
+  </tr>
+</table>
 
 </div>
 
