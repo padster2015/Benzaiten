@@ -33,7 +33,7 @@
      <style>
 tr:nth-child(odd)       { background-color:#eee; !important }
 tr:nth-child(even)      { background-color:#fff; !important}
-table td:hover{
+table tr:hover{
     background: yellow;
 }
 tr th {color:black; padding:1%;}
