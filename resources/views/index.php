@@ -193,7 +193,12 @@ Legal stuff • copyright 2015
 
 </footer>
 <script>
+
+$('#btn-add').click(function(){
 $('#myModal').modal('show')
+});
+
+
 </script>
    
          <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script> 
