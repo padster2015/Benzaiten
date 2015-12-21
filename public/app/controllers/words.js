@@ -1,8 +1,8 @@
 app.controller('employeesController', function($scope, $http, API_URL) {
     //retrieve employees listing from API
-    $http.get(API_URL + "employees")
+    $http.get(API_URL + "words")
             .success(function(response) {
-                $scope.employees = response;
+                $scope.words = response;
             });
     
     //show modal form
@@ -16,10 +16,10 @@ app.controller('employeesController', function($scope, $http, API_URL) {
             case 'edit':
                 $scope.form_title = "Employee Detail";
                 $scope.id = id;
-                $http.get(API_URL + 'employees/' + id)
+                $http.get(API_URL + 'words/' + id)
                         .success(function(response) {
                             console.log(response);
-                            $scope.employee = response;
+                            $scope.words = response;
                         });
                 break;
             default:
@@ -31,7 +31,7 @@ app.controller('employeesController', function($scope, $http, API_URL) {
 
     //save new record / update existing record
     $scope.save = function(modalstate, id) {
-        var url = API_URL + "employees";
+        var url = API_URL + "words";
         
         //append employee id to the URL if the form is in edit mode
         if (modalstate === 'edit'){
@@ -58,7 +58,7 @@ app.controller('employeesController', function($scope, $http, API_URL) {
         if (isConfirmDelete) {
             $http({
                 method: 'DELETE',
-                url: API_URL + 'employees/' + id
+                url: API_URL + 'words/' + id
             }).
                     success(function(data) {
                         console.log(data);
