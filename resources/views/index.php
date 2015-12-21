@@ -95,7 +95,7 @@ td {
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
                         <td>
-                            <button class="btn btn-default btn-xs btn-detail" data-toggle="modal" data-target="#modal-edit" onclick="#btn-edit" ng-click="toggle('edit', words.id)">Edit</button>
+                            <button class="btn btn-default btn-xs btn-detail" data-toggle="modal" data-target="#modal" onclick="#btn-edit">Edit</button>
                         </td>
                     </tr>
                 </tbody>
@@ -188,7 +188,7 @@ $('#btn-add').click(function(){
 $('#myModal').modal('show')
 });
 
-$('#modal-edit').click(function(edit){
+$('#btn-edit').click(function(edit){
 $('#myModal').modal('show')
 });
 
