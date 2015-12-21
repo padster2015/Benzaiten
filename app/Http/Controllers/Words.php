@@ -19,7 +19,7 @@ class Words extends Controller
      
         $users = DB::select('select * from `Master`', [1]);
 
-        return view('user.index', ['users' => $users]);
+        return view('Words.index', ['users' => $users]);
 
         foreach ($users as $user) {
     echo $user->ID;
