@@ -17,8 +17,7 @@ class Words extends Controller
     public function index()
     {
      
-                $skip = $request->input('skip');
-                $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->skip($skip)->take(3)->get();
+                $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->skip(4)->take(30)->get();
 
         echo json_encode($phrases,JSON_NUMERIC_CHECK);
 
