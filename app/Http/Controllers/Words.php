@@ -17,15 +17,9 @@ class Words extends Controller
     public function index()
     {
      
-    $phrases = DB::table('Master')->get();
-               echo "ok";
+               $phrases = DB::table('Master')->get();
 
-               $results = json_decode(json_encode($phrases), true);
-
-    echo json_encode($json,JSON_NUMERIC_CHECK);
-
-}
-
+        echo json_encode($phrases);
 
                     //return view('user.index', ['users' => $users]);
           }
