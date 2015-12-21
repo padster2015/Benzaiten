@@ -79,7 +79,7 @@ td {
 <table style=width:"960px !important">
                 <thead>
                     <tr>
-                        <th width="5%"sortable="sortable">ID</th>
+                        <th width="5%" data-sortable="true">ID</th>
                         <th width="200">English Word</th>
                         <th width="200">French</th>
                         <th width="200">German</th>
