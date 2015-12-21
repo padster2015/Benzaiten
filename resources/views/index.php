@@ -36,7 +36,7 @@ tr:nth-child(even)      { background-color:#fff; !important}
 table tr:hover{
     background: yellow;
 }
-tr th {color:black; padding:1%;}
+tr th {background-color:white;color:black; padding:1%;}
 td {
     padding:1%;
 }
