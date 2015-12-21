@@ -79,11 +79,11 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="x in names">
-                        <td>{{ x.ID }}</td>
-                        <td>{{ x.Source }}</td>
-                        <td>{{ x.Target }}</td>
-                        <td>{{ x.Last_edit_by }}</td>
-                        <td>{{ x.Platform }}</td>
+                        <td width="5%">{{ x.ID }}</td>
+                        <td width="25%">{{ x.Source }}</td>
+                        <td width="25%">{{ x.Target }}</td>
+                        <td width="25%">{{ x.Last_edit_by }}</td>
+                        <td width="25%">{{ x.Platform }}</td>
                         <td>
                             <button class="btn btn-default btn-xs btn-detail" ng-click="toggle('edit', word.id)">Edit</button>
                         </td>
