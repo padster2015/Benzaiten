@@ -18,6 +18,7 @@ class Words extends Controller
     {
      
                 $phrases = DB::table('Dictionary')->simplePaginate(15);
+                        return view('Words.index', ['phrases' => $phrases]);
         echo json_encode($phrases,JSON_NUMERIC_CHECK);
 
 
