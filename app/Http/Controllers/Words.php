@@ -17,9 +17,9 @@ class Words extends Controller
     public function index()
     {
      
-               $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->get();
+               $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->take(25)->get();
 
-        echo json_encode($phrases,JSON_NUMERIC_CHECK);
+        echo json_encode($phrases,JSON_NUMERIC_CHECK);->take(25)
                     //return view('user.index', ['users' => $users]);
           }
 
