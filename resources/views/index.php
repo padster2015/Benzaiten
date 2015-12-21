@@ -69,7 +69,7 @@
 <table class="table">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th sortable="sortable">ID</th>
                         <th>English Word</th>
                         <th>French</th>
                         <th>German</th>
