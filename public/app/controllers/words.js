@@ -11,10 +11,10 @@ app.controller('employeesController', function($scope, $http, API_URL) {
 
         switch (modalstate) {
             case 'add':
-                $scope.form_title = "Add New Employee";
+                $scope.form_title = "Add New Word";
                 break;
             case 'edit':
-                $scope.form_title = "Employee Detail";
+                $scope.form_title = "Word Detail";
                 $scope.id = id;
                 $http.get(API_URL + 'words/' + id)
                         .success(function(response) {

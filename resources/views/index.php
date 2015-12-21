@@ -95,7 +95,7 @@ td {
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
                         <td>
-                            <button class="btn btn-default btn-xs btn-detail" ng-click="toggle('edit', word.id)">Edit</button>
+                            <button class="btn btn-default btn-xs btn-detail" data-toggle="modal" data-target="#modal-edit" onclick="#btn-edit" ng-click="toggle('edit', words.id)">Edit</button>
                         </td>
                     </tr>
                 </tbody>
@@ -142,16 +142,6 @@ td {
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-3 control-label">Position</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="position" name="position" placeholder="Position" value="{{position}}" 
-                                        ng-model="employee.position" ng-required="true">
-                                    <span class="help-inline" 
-                                        ng-show="frmEmployees.position.$invalid && frmEmployees.position.$touched">Position field is required</span>
-                                    </div>
-                                </div>
-
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -195,6 +185,10 @@ Legal stuff • copyright 2015
 <script>
 
 $('#btn-add').click(function(){
+$('#myModal').modal('show')
+});
+
+$('#modal-edit').click(function(edit){
 $('#myModal').modal('show')
 });
 
