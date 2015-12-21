@@ -46,7 +46,7 @@
     
     
     <h1 style="float:left;margin-top:11px;">Rakuten Marketing Translate Platform</h1>
-           <br> <h2>Benzatain</h2>
+           <br> <h2 style="float:right;">Benzatain</h2>
 
     
     <div id="controllers">
