@@ -21,7 +21,7 @@ class Words extends Controller
                echo "ok";
 
                foreach ($users as $user) {
-    echo $user->ID;
+    echo $user->Source;
 }
 
 
