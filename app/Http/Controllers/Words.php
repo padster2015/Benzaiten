@@ -16,8 +16,10 @@ class Words extends Controller
      */
     public function index()
     {
-     
-     echo "hello";
+
+
+
+echo "hello";
 
 
           }
