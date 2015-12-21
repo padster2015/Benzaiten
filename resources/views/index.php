@@ -30,7 +30,10 @@
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
      
-     
+     <style>
+tr:nth-child(odd)       { background-color:#eee; !important }
+tr:nth-child(even)      { background-color:#fff; !important}
+     </style>
     </head>
     
     <!-- HTML code from Bootply.com editor -->
@@ -70,7 +73,7 @@
                 <thead>
                     <tr>
                         <th width="5%"sortable="sortable">ID</th>
-                        <th width="100">English Word</th>
+                        <th width="200">English Word</th>
                         <th width="25%">French</th>
                         <th width="25%">German</th>
                         <th width="25%">Japanese</th>
