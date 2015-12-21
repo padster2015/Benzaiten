@@ -21,8 +21,8 @@ class Words extends Controller
                echo "ok";
 
                foreach ($phrases as $word) {
-                    echo $word->ID ',';
-    echo $word->Source; ',';
+                    echo $word->ID ",";
+    echo $word->Source; ",";
         echo $word->Target; ',';
             echo $word->Last_edit_by ',';
                 echo $word->Date_Time_Edit ',';
