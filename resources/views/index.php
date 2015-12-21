@@ -66,14 +66,14 @@
             </div>
             
 
-<table class="table">
+<table class="table" width="960">
                 <thead>
                     <tr>
-                        <th sortable="sortable">ID</th>
-                        <th>English Word</th>
-                        <th>French</th>
-                        <th>German</th>
-                        <th>Japanese</th>
+                        <th width="5%"sortable="sortable">ID</th>
+                        <th width="25%">English Word</th>
+                        <th width="25%">French</th>
+                        <th width="25%">German</th>
+                        <th width="25%">Japanese</th>
                         <th><button id="btn-add" class="btn btn-primary btn-xs" ng-click="toggle('add', 0)">Add New Word</button></th>
                     </tr>
                 </thead>
