@@ -17,8 +17,8 @@ class Words extends Controller
     public function index()
     {
      
-                $phrases = DB::table('Dictionary')->simplePaginate(15);
-                        return view('Words.index', ['phrases' => $phrases]);
+                $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->get();
+
         echo json_encode($phrases,JSON_NUMERIC_CHECK);
 
 
