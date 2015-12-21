@@ -97,9 +97,8 @@ td {
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
                         <td>
-                         <button id="btn-add" class="btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">Add New Word</button>
+                                                <button id="btn-add" class="btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">edit Word</button>
 
-                            <button id="btn-add" class="btn btn-default btn-xs btn-detail" data-toggle="modal" onclick="#btn-edit">Edit</button>
                         </td>
                     </tr>
                 </tbody>
