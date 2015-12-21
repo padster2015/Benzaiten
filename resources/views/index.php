@@ -207,7 +207,8 @@ function customersController($scope,$http) {
     
 }
 </script>
- 
+ <script src="app/app.js"></script>
+        <script src="app/controllers/words.js"></script>
 
         
     </body>
