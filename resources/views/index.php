@@ -37,25 +37,19 @@
     
     <body>
     <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WBJJNF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WBJJNF');</script>
+
 <!-- End Google Tag Manager -->
     <header class="animated slideInDown">
     
     
-    <img src="http://cdn.fit-award.com/img/logo/logo.png" width="50"   align="absmiddle" style="float:left;">
+    <img src="http://marketing.rakuten.com/img/common/logo/2.gif" width="150"   align="absmiddle" style="float:left;">
     
     
-    <h1 style="float:left;margin-top:11px;">Fit Award</h1>
+    <h1 style="float:left;margin-top:11px;">Rakuten Marketing Translate Platform</h1>
     
     
     <div id="controllers">
-      <a href="http://fit-award.com/app/profile/resetpassword.php">
+      <a href="resetpassword.php">
  Reset my password
       </a> | <a href="logout.php">Log out</a> | </div>
     </header>
@@ -67,7 +61,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="app-content" id="data-items" ng-app="" ng-controller="customersController"> 
        <div class="grid" ng-repeat="x in names">   
          <div class="col-sm-10">
-            <img title="profile image" class="img-circle img-responsive" width="150" heigh="150" src="{{x.Photo}}" style="width:60px !important;float:left; height:60px !important; border-color: #b1e046;
+          <!-- Language Flag -->  <img title="profile image" class="img-circle img-responsive" width="150" heigh="150" src="" style="width:60px !important;float:left; height:60px !important; border-color: #b1e046;
     border-style: solid;
     border-width: 1px;"><h1 class="pname">{{x.ID}}</h1>
             </div>
