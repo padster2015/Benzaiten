@@ -84,7 +84,9 @@ td {
                         <th width="200">French</th>
                         <th width="200">German</th>
                         <th width="200">Japanese</th>
-                        <th><button id="btn-add" class="btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">Add New Word</button></th>
+                        <th>
+                        <button id="btn-add" class="btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">Add New Word</button>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -95,7 +97,7 @@ td {
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
                         <td>
-                            <button id="btn-edit" class="btn btn-default btn-xs btn-detail" data-toggle="modal" data-target="#modal" onclick="#btn-edit">Edit</button>
+                        <button id="btn-add" class="btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">Add New Word</button>
                         </td>
                     </tr>
                 </tbody>
