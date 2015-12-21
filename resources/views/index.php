@@ -8,7 +8,6 @@
 <table>
   <tr ng-repeat="x in names">
     <td>{{ x.ID }}</td>
-    <td>{{ x.Source }}</td>
   </tr>
 </table>
 
