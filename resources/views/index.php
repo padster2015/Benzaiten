@@ -81,19 +81,19 @@ td {
                     <tr>
                         <th width="5%"sortable="sortable">ID</th>
                         <th width="200">English Word</th>
-                        <th width="25%">French</th>
-                        <th width="25%">German</th>
-                        <th width="25%">Japanese</th>
+                        <th width="200">French</th>
+                        <th width="200">German</th>
+                        <th width="200">Japanese</th>
                         <th><button id="btn-add" class="btn btn-primary btn-xs" ng-click="toggle('add', 0)">Add New Word</button></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="x in names">
                         <td width="5%">{{ x.ID }}</td>
-                        <td width="100" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
-                        <td width="25%">{{ x.French }}</td>
-                        <td width="25%">{{ x.German }}</td>
-                        <td width="25%">{{ x.Japanese }}</td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
+                        <td width="200">{{ x.French }}</td>
+                        <td width="200">{{ x.German }}</td>
+                        <td width="200">{{ x.Japanese }}</td>
                         <td>
                             <button class="btn btn-default btn-xs btn-detail" ng-click="toggle('edit', word.id)">Edit</button>
                         </td>
