@@ -79,7 +79,7 @@
        data-query-params="queryParams"
         data-mobile-responsive="true"
               data-pagination="true"
-       data-url="http://192.168.99.100:32786/api/v1/words/show/50">
+       data-url="http://192.168.99.100:32769/api/v1/words/show/50">
     <thead>
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
