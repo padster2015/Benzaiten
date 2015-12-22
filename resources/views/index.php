@@ -67,6 +67,9 @@
        data-show-refresh="true"
        data-show-toggle="true"
        data-show-columns="true"
+       data-query-params="queryParams"
+              data-pagination="true"
+               data-height="300"
        data-url="http://192.168.99.100:32786/api/v1/words/show/50">
     <thead>
     <tr>
@@ -153,6 +156,18 @@ $('#myModal').modal('show')
 $('.edit').click(function(){
 $('#myModal').modal('show')
 });
+
+
+
+function queryParams() {
+    return {
+        type: 'owner',
+        sort: 'updated',
+        direction: 'desc',
+        per_page: 100,
+        page: 1
+    };
+}
 
 </script>
    
