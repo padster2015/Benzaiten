@@ -11,13 +11,14 @@
             }
 
             body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+                 background-image: url("http://farm6.staticflickr.com/5808/22181541340_8be849a61b_h.jpg");
+    background-size: 100% auto;
+    display: table;
+    font-family: "Lato";
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 
             .container {
                 text-align: center;
@@ -36,7 +37,8 @@
             a{
                 text-decoration: none;
                 color:#b90000;
-            }
+                text-shadow: 0 2px 1px rgba(255, 255, 255, 1);
+}
         </style>
     </head>
     <body>
