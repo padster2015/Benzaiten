@@ -24,12 +24,16 @@
 <link href="http://cdn.fit-award.com/css/bootstrap.css" type="text/css" rel="stylesheet">
 
 <link href="http://cdn.fit-award.com/css/animate.css" type="text/css" rel="stylesheet">
-<link href="http://cdn.fit-award.com/css/timeline.css" type="text/css" rel="stylesheet">
 
         <!-- CSS code from Bootply.com editor -->
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-     
+     <style>
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:200;
+}
+</style>
     </head>
         
     <body>
