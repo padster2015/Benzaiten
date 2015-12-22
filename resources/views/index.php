@@ -108,39 +108,11 @@ h1{
         <th data-field="French">French</th>
         <th data-field="German">German</th>
         <th data-field="Japanese" data-visible="false">Japanese</th>
-        <th>
-<button class="example2-button"> click</button>
-        <ul id="example2-context-menu" class="dropdown-menu">
-    <li data-item="edit"><a>Edit</a></li>
-    <li data-item="delete"><a>Delete</a></li>
-    <li data-item="action1"><a>Action Here</a></li>
-    <li data-item="action2"><a>And Action Here</a></li>
-</ul></th>
+
     </tr>
     </thead>
 </table>
 
-
-
-
-<script>
-   $('#example2-grid').bootstrapTable({
-    contextMenu: '#example2-context-menu',
-    contextMenuButton: '.example2-button',
-    onContextMenuItem: function(row, $el){
-        if($el.data("item") == "edit"){
-            alert("Edit: " + row.itemid + ' ' + row.name + ' ' + row.price);
-        } else if($el.data("item") == "delete"){
-            alert("Delete: " + row.itemid + ' ' + row.name + ' ' + row.price);
-        } else if($el.data("item") == "action1"){
-            alert("Action1: " + row.itemid + ' ' + row.name + ' ' + row.price);
-        } else if($el.data("item") == "action2"){
-            alert("Action2: " + row.itemid + ' ' + row.name + ' ' + row.price);
-        }
-    }
-});
-
-    </script>
 
             <!-- End of Table-to-load-the-data Part -->
             <!-- Modal (Pop up when detail button clicked) -->
