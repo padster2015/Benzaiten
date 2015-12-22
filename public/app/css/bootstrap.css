@@ -1947,10 +1947,7 @@ input.btn-block[type="submit"], input.btn-block[type="reset"], input.btn-block[t
     position: relative;
     transition: height 0.35s ease 0s;
 }
-@font-face {
-    font-family: "Glyphicons Halflings";
-    src: url("../httpdocs/app/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../httpdocs/app/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../httpdocs/app/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../httpdocs/app/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
-}
+
 .glyphicon {
     -moz-osx-font-smoothing: grayscale;
     display: inline-block;
