@@ -190,16 +190,16 @@ function queryParams() {
          <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script> 
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.css">
+<link rel="stylesheet" href="app/css/bootstrap-table.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.js"></script>
+<script src="app/js/bootstrap-table.js"></script>
 
 <!-- Latest compiled and minified Locales 
 <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/locale/bootstrap-table-zh-CN.min.js"></script>
 -->
 
-<script src="http://192.168.99.100:32786/app/js/extensions/export/bootstrap-table-export.js"></script>
+<script src="app/js/extensions/export/bootstrap-table-export.js"></script>
     <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
 <script src="app/js/extensions/editable/bootstrap-table-editable.js"></script>
 <script>
