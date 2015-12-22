@@ -11,8 +11,6 @@
             }
 
             body {
-                 background-image: url("http://farm6.staticflickr.com/5808/22181541340_8be849a61b_h.jpg");
-    background-size: 100% auto;
     display: table;
     font-family: "Lato";
     font-weight: 100;
