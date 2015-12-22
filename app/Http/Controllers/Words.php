@@ -14,10 +14,10 @@ class Words extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($limit)
     {
      
-                $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->skip(4)->take(30)->get();
+                $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->skip(4)->take($limit)->get();
 
         echo json_encode($phrases,JSON_NUMERIC_CHECK);
 
