@@ -17,7 +17,7 @@ class Words extends Controller
     public function index($limit)
     {
      
-                $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->skip(4)->take($limit)->get();
+                $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->take($limit)->get();
 
         echo json_encode($phrases,JSON_NUMERIC_CHECK);
 
