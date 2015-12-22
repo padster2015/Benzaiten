@@ -99,6 +99,7 @@ h1{
          data-click-to-select="true"
                data-toolbar="#toolbar"
        data-query-params="queryParams"
+        data-mobile-responsive="true"
               data-pagination="true"
        data-url="http://192.168.99.100:32786/api/v1/words/show/50">
     <thead>
