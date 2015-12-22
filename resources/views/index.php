@@ -100,7 +100,6 @@ h1{
                data-toolbar="#toolbar"
        data-query-params="queryParams"
               data-pagination="true"
-              data-height="800"
        data-url="http://192.168.99.100:32786/api/v1/words/show/50">
     <thead>
     <tr>
