@@ -108,18 +108,18 @@ h1{
         <th data-field="French">French</th>
         <th data-field="German">German</th>
         <th data-field="Japanese" data-visible="false">Japanese</th>
-
+        <th><ul id="example2-context-menu" class="dropdown-menu">
+    <li data-item="edit"><a>Edit</a></li>
+    <li data-item="delete"><a>Delete</a></li>
+    <li data-item="action1"><a>Action Here</a></li>
+    <li data-item="action2"><a>And Action Here</a></li>
+</ul></th>
     </tr>
     </thead>
 </table>
 
 
-<ul id="example2-context-menu" class="dropdown-menu">
-    <li data-item="edit"><a>Edit</a></li>
-    <li data-item="delete"><a>Delete</a></li>
-    <li data-item="action1"><a>Action Here</a></li>
-    <li data-item="action2"><a>And Action Here</a></li>
-</ul>
+
 
 <script>
    $('#example2-grid').bootstrapTable({
