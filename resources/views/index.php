@@ -50,7 +50,6 @@
     <h1 style="float:right;margin-top:11px;">Translation Platform</h1>
 
     </header>
-    <hr>
    
        <div class="container animated fadeIn">
       <div class="row row-offcanvas row-offcanvas-left">
@@ -140,18 +139,9 @@
                             </form>
                         </div>
 
-      <!-- sidebar -->
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>              
-            </ul>
-        </div>
-    
 
-                        
+
+
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" id="btn-save" ng-click="save(modalstate, id)" ng-disabled="frmEmployees.$invalid">Add Word</button>
                         </div>
@@ -165,7 +155,16 @@
  </div>
  </div>
 
-
+      <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>              
+            </ul>
+        </div>
+    
              </div><!--/tab-pane-->
 <footer>
 Legal stuff • copyright 2015
@@ -228,17 +227,6 @@ function queryParams() {
     <script src="//rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/js/bootstrap-editable.js"></script>
 <script src="app/js/extensions/mobile/bootstrap-table-mobile.js"></script>
 
-<script>
-function customersController($scope,$http) {
-            
-            
-            $http.get('http://192.168.99.100:32786/api/v1/words/show/50', 
-            {cache: false}).success(function(data){$scope.names = data;});
-            
-            
-    
-}
-</script>
  <script src="app/app.js"></script>
         <script src="app/controllers/words.js"></script>
 
