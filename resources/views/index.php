@@ -61,11 +61,12 @@
             </div>
             
 
-<table data-toggle="table"
+<table data-toggle="table" data-sort-name="ID"
+       data-sort-order="desc"
        data-url="http://192.168.99.100:32786/api/v1/words/show/50">
     <thead>
     <tr>
-        <th data-field="ID">ID</th>
+        <th data-field="ID" data-sortable="true">ID</th>
         <th data-field="Source">English Word</th>
         <th data-field="French">French</th>
         <th data-field="German">German</th>
