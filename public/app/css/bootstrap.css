@@ -4396,9 +4396,12 @@ font-family: 'Lato', sans-serif;
 
 
 #sidebar {
-  height: 100%;
-  padding-right: 0;
-  padding-top: 20px;
+   height: 100%;
+    padding-right: 0;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    width: 10%;
 }
 #sidebar .nav {
   width: 95%;
