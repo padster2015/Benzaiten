@@ -60,6 +60,10 @@
           <!-- Language Flag -->  
             </div>
             
+<div class="alert alert-success" id="eventsResult">
+    Here is the result of success or fail
+</div>
+
 
 <table data-toggle="table" data-sort-name="ID"
        data-sort-order="desc"
