@@ -200,6 +200,7 @@ function queryParams() {
 
 <script src="app/js/extensions/export/bootstrap-table-export.js"></script>
 <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
+    <script src="//rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/js/bootstrap-editable.js"></script>
 <script src="app/js/extensions/mobile/bootstrap-table-mobile.js"></script>
 
 <script>
