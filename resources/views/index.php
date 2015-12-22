@@ -86,23 +86,23 @@ td {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="phrases in words" ng-include="getTemplate(words)">
+                    <tr ng-repeat="x in names" ng-include="getTemplate(employee)">
                        <script type="text/ng-template" id="display">   
-                        <td width="5%"><strong>{{ phrases.ID }}</strong></td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ phrases.Source }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ phrases.French }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ phrases.German }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ phrases.Japanese }}</td>
+                        <td width="5%"><strong>{{ x.ID }}</strong></td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.French }}</td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
                         <td>
                              <button type="button" class="btn btn-primary" ng-click="editEmployee(employee)">Edit</button>   
                       <button class="edit btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">edit Word</button>
                         </td>
                         </script>
                            <script type="text/ng-template" id="edit"> 
-                             <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ phrases.Source }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ phrases.French }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ phrases.German }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ phrases.Japanese }}</td>
+                             <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.French }}</td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
                         <td>  
       <select class="form-control input-sm" ng-model=employee.active>  
         <option value='1'>Yes</option>  
@@ -199,11 +199,12 @@ function customersController($scope,$http) {
             
             
             $http.get('http://192.168.99.100:32786/api/v1/words', 
-            {cache: false}).success(function(data){$scope.phrases = data;});
+            {cache: false}).success(function(data){$scope.names = data;});
             
 
+
     $scope.getTemplate = function (employee) {  
-        if (phrases.ID === $scope.selected.ID){  
+        if (names.ID === $scope.selected.ID){  
             return 'edit';  
         }  
         else return 'display';  
