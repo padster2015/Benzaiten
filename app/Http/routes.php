@@ -19,7 +19,7 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/api/v1/words/{ID?}/show{limit}', 'Words@index');
+Route::get('/api/v1/words/show/{limit}', 'Words@index');
 
 
 Route::controllers([
