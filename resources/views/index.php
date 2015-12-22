@@ -100,16 +100,18 @@ h1{
                data-toolbar="#toolbar"
        data-query-params="queryParams"
               data-pagination="true"
-              data-height="500"
-              data-editable="true"
+              data-height="800"
        data-url="http://192.168.99.100:32786/api/v1/words/show/50">
     <thead>
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false">ID</th>
         <th data-field="Source">English Word</th>
-        <th data-field="French">French</th>
-        <th data-field="German">German</th>
-        <th data-field="Japanese" data-visible="false">Japanese</th>
+        <th data-field="French" data-editable="true"
+>French</th>
+        <th data-field="German" data-editable="true"
+>German</th>
+        <th data-field="Japanese" data-editable="true"
+ data-visible="false">Japanese</th>
 
     </tr>
     </thead>
