@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/Benzaiten', function () {
+Route::get('/', function () {
     return view('index');
 });
 
