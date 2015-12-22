@@ -203,8 +203,8 @@ function customersController($scope,$http) {
             
 
 
-    $scope.getTemplate = function (words) {  
-        if (names.ID === $scope.selected.ID){  
+    /*$scope.getTemplate = function (words) {  
+        if (.ID === $scope.selected.ID){  
             return 'edit';  
         }  
         else return 'display';  
@@ -218,7 +218,7 @@ function customersController($scope,$http) {
 
     $scope.editEmployee = function (words) {  
         $scope.selected = angular.copy(ID);  
-    };   
+    };   */
 }
 </script>
  <script src="app/app.js"></script>
