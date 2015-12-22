@@ -30,17 +30,6 @@
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
      
-     <style>
-tr:nth-child(odd)       { background-color:#eee; !important }
-tr:nth-child(even)      { background-color:#fff; !important}
-table tr:hover{
-    background: #574f4f; color:white;
-}
-tr th {background-color:white;color:black; padding:1%;}
-td {
-    padding:1%;
-}
-     </style>
     </head>
         
     <body>
@@ -72,7 +61,7 @@ td {
             </div>
             
 
-<table style="width:960px !important">
+<table style="width:960px !important" class="table table-striped">
                 <thead>
                     <tr>
                         <th width="5%" data-sortable="true">ID</th>
