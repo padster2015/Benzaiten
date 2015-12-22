@@ -39,7 +39,6 @@
 <style>
 .navbar-default {
     background-color: #FFF !important;
-    border-color: #e7e7e7;
 }
 </style>
     </head>
