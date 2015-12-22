@@ -106,12 +106,9 @@ h1{
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false">ID</th>
         <th data-field="Source">English Word</th>
-        <th data-field="French" data-editable="true"
->French</th>
-        <th data-field="German" data-editable="true"
->German</th>
-        <th data-field="Japanese" data-editable="true"
- data-visible="false">Japanese</th>
+        <th data-field="French" data-editable="true">French</th>
+        <th data-field="German" data-editable="true">German</th>
+        <th data-field="Japanese" data-editable="true" data-visible="false">Japanese</th>
 
     </tr>
     </thead>
