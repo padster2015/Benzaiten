@@ -198,7 +198,8 @@ function queryParams() {
 <!-- Latest compiled and minified Locales -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/locale/bootstrap-table-zh-CN.min.js"></script>
 
-<script src="../assets/bootstrap-table/src/extensions/export/bootstrap-table-export.js"></script>
+
+<script src="http://192.168.99.100:32786/app/js/extensions/export/bootstrap-table-export.js"></script>
     <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
 
 <script>
