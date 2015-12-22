@@ -19,17 +19,21 @@
      
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700' rel='stylesheet' type='text/css'>
-
-<link href="http://cdn.fit-award.com/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'>
 
 <link href="http://cdn.fit-award.com/css/animate.css" type="text/css" rel="stylesheet">
-<link href="http://cdn.fit-award.com/css/timeline.css" type="text/css" rel="stylesheet">
 
         <!-- CSS code from Bootply.com editor -->
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
      
+<style>
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:200;
+}
+</style>
+
     </head>
         
     <body>
