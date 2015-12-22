@@ -114,6 +114,34 @@ h1{
 </table>
 
 
+<ul id="example3-context-menu" class="dropdown-menu">
+    <li data-item="edit"><a>Edit</a></li>
+    <li data-item="delete"><a>Delete</a></li>
+    <li data-item="action1"><a>Action Here</a></li>
+    <li data-item="action2"><a>And Action Here</a></li>
+</ul>
+                  <script>
+                  $('#example3-grid').bootstrapTable({
+    contextMenu: '#example3-context-menu',
+    contextMenuTrigger: 'both',
+    onClickRow: function(row, $el){
+        $('#example3-grid').find('.success').removeClass('success');
+        $el.addClass('success');
+    },
+    onContextMenuItem: function(row, $el){
+        if($el.data("item") == "edit"){
+            alert("Edit: " + row.itemid + ' ' + row.name + ' ' + row.price);
+        } else if($el.data("item") == "delete"){
+            alert("Delete: " + row.itemid + ' ' + row.name + ' ' + row.price);
+        } else if($el.data("item") == "action1"){
+            alert("Action1: " + row.itemid + ' ' + row.name + ' ' + row.price);
+        } else if($el.data("item") == "action2"){
+            alert("Action2: " + row.itemid + ' ' + row.name + ' ' + row.price);
+        }
+    }
+});
+</script>  
+
             <!-- End of Table-to-load-the-data Part -->
             <!-- Modal (Pop up when detail button clicked) -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
