@@ -36,7 +36,12 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="app/js/bootstrap-table.js"></script>
 
-
+<style>
+.navbar-default {
+    background-color: #FFF !important;
+    border-color: #e7e7e7;
+}
+</style>
     </head>
         
     <body>
