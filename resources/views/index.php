@@ -25,7 +25,7 @@
 <link href="app/css/bootstrap.css" type="text/css" rel="stylesheet">
 
 <link href="http://cdn.fit-award.com/css/animate.css" type="text/css" rel="stylesheet">
-
+ <link rel="stylesheet" href="//rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
         <!-- CSS code from Bootply.com editor -->
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -88,7 +88,8 @@ h1{
 </div>-->
 
 
-<table data-toggle="table" data-sort-name="ID"
+<table data-toggle="table"
+ data-sort-name="ID"
        data-sort-order="desc"
        data-search="true"
        data-show-refresh="true"
@@ -99,7 +100,8 @@ h1{
                data-toolbar="#toolbar"
        data-query-params="queryParams"
               data-pagination="true"
-              date-height="500"
+              data-height="500"
+              data-editable="true"
        data-url="http://192.168.99.100:32786/api/v1/words/show/50">
     <thead>
     <tr>
@@ -220,7 +222,7 @@ function queryParams() {
 -->
 
 <script src="app/js/extensions/export/bootstrap-table-export.js"></script>
-    <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
+<script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
 <script src="app/js/extensions/editable/bootstrap-table-editable.js"></script>
 <script>
 function customersController($scope,$http) {
