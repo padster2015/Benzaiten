@@ -1776,8 +1776,8 @@ textarea.input-lg, select.input-lg[multiple] {
 	border-radius:0px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-    background-color: #3276b1;
-    border-color: #285e8e;
+    background-color: #000000;
+    border-color: #000000;
     color: #fff;
 }
 .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
