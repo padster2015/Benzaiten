@@ -61,32 +61,21 @@
             </div>
             
 
-<table style="width:960px !important" class="table table-striped">
-                <thead>
-                    <tr>
-                        <th width="5%" data-sortable="true">ID</th>
-                        <th width="200">English Word</th>
-                        <th width="200">French</th>
-                        <th width="200">German</th>
-                        <th width="200">Japanese</th>
-                        <th>
-                        <button id="btn-add" class="btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">Add New Word</button>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="x in names">
-                        <td width="5%"><strong>{{ x.ID }}</strong></td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.French }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
-                        <td>
-                      <button class="edit btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">edit Word</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+<table data-toggle="table"
+       data-url="http://192.168.99.100:32786/api/v1/words/show/50">
+    <thead>
+    <tr>
+        <th data-field="ID">ID</th>
+        <th data-field="Source">English Word</th>
+        <th data-field="French">French</th>
+        <th data-field="German">German</th>
+        <th data-field="Japanese">Japanese</th>
+
+    </tr>
+    </thead>
+</table>
+
+
             <!-- End of Table-to-load-the-data Part -->
             <!-- Modal (Pop up when detail button clicked) -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -163,6 +152,17 @@ $('#myModal').modal('show')
 </script>
    
          <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script> 
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.js"></script>
+
+<!-- Latest compiled and minified Locales -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/locale/bootstrap-table-zh-CN.min.js"></script>
+
+
 
 <script>
 function customersController($scope,$http) {
