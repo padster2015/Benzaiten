@@ -204,7 +204,7 @@ function customersController($scope,$http) {
 
 
     $scope.getTemplate = function (employee) {  
-        if (x.ID === $scope.selected.ID){  
+        if (names.ID === $scope.selected.ID){  
             return 'edit';  
         }  
         else return 'display';  
