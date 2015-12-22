@@ -22,7 +22,7 @@
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 
-<link href="http://cdn.fit-award.com/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
 
 <link href="http://cdn.fit-award.com/css/animate.css" type="text/css" rel="stylesheet">
 
@@ -37,7 +37,7 @@
 <script src="app/js/bootstrap-table.js"></script>
 
 
- 
+
      <style>
 body {
     font-family: 'Source Sans Pro', sans-serif;
