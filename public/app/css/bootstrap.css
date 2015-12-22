@@ -4421,6 +4421,7 @@ font-family: 'Lato', sans-serif;
     -webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
+    display:block;
   }
   .row-offcanvas-right
   .sidebar-offcanvas {
