@@ -35,14 +35,14 @@
             }
             a{
                 text-decoration: none;
-                
+                color:#b90000;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="animated infinite pulse title"><a href="/benzaiten">Benzaiten 1</a></div>
+                <div class="animated pulse title"><a href="/benzaiten">Benzaiten 1</a></div>
             </div>
         </div>
     </body>
