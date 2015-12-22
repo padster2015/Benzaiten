@@ -19,7 +19,7 @@
      
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 
 <link href="app/css/bootstrap.css" type="text/css" rel="stylesheet">
@@ -68,7 +68,7 @@
 
 <table id="example2-grid" data-toggle="table"
  data-sort-name="ID"
-       data-sort-order="desc"
+       data-sort-order="asc"
        data-search="true"
        data-show-refresh="true"
        data-show-toggle="true"
