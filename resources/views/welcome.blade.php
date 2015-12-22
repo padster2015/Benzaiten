@@ -42,7 +42,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="animated pulse title"><a href="/benzaiten">Benzaiten 1</a></div>
+                <div class="animated pulse title"><a href="/benzaiten">Benzaiten 1</a><br>
+                弁才天</div>
             </div>
         </div>
     </body>
