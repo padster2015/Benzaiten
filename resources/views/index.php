@@ -51,9 +51,6 @@
 
     </header>
     <hr>
-
-
-    <div class="page-container">
   
     <!-- top navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -185,6 +182,15 @@ Legal stuff • copyright 2015
 
 </footer>
 <script>
+
+
+
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
+
 
 $('#btn-add').click(function(){
 $('#myModal').modal('show')
