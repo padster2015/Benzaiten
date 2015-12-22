@@ -44,7 +44,7 @@ body {
     font-weight:200;
 }
 
-h2{
+h1 h2{
     font-family: 'Source Sans Pro', sans-serif;
 
         font-weight:400;
