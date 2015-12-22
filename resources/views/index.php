@@ -37,23 +37,6 @@
 <script src="app/js/bootstrap-table.js"></script>
 
 
-
-     <style>
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight:200;
-}
-
-h2{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight:400;
-}
-
-h1{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight:400;
-}
-</style>
     </head>
         
     <body>
@@ -64,13 +47,8 @@ h1{
     <img src="http://marketing.rakuten.com/img/common/logo/2.gif" width="150"   align="absmiddle" style="float:left;">
     
     
-    <h1 style="float:left;margin-top:11px;">Translation Platform</h1> :: <h2>Benzatain</h2>
+    <h1 style="float:left;margin-top:11px;">Translation Platform</h1>
 
-    
-    <div id="controllers">
-      <a href="resetpassword.php">
- Reset my password
-      </a> | <a href="logout.php">Log out</a> | </div>
     </header>
     <hr>
    
