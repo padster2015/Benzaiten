@@ -70,7 +70,7 @@
         <th data-field="Source">English Word</th>
         <th data-field="French">French</th>
         <th data-field="German">German</th>
-        <th data-field="Japanese">Japanese</th>
+        <th data-field="Japanese" data-visible="false">Japanese</th>
 
     </tr>
     </thead>
