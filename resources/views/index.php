@@ -200,8 +200,6 @@ function queryParams() {
 
 <script src="app/js/extensions/export/bootstrap-table-export.js"></script>
 <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
-<script src="app/js/extensions/editable/bootstrap-table-editable.js"></script>
-<script src="app/js/extensions/leftmenu/bootstrap-table-contextmenu.js"></script>
 <script src="app/js/extensions/mobile/bootstrap-table-mobile.js"></script>
 
 <script>
@@ -218,6 +216,7 @@ function customersController($scope,$http) {
  <script src="app/app.js"></script>
         <script src="app/controllers/words.js"></script>
 
-        
+        <script src="app/js/extensions/editable/bootstrap-table-editable.js"></script>
+
     </body>
 </html>
