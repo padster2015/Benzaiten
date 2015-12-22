@@ -14,7 +14,20 @@ class Words extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($limit)
+    public function index()
+    {
+     
+                $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->get();
+
+        echo json_encode($phrases,JSON_NUMERIC_CHECK);
+
+
+
+                    //return view('user.index', ['users' => $users]);
+          }
+
+/*
+ public function index($limit)
     {
      
                 $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->take($limit)->get();
@@ -25,6 +38,11 @@ class Words extends Controller
 
                     //return view('user.index', ['users' => $users]);
           }
+
+
+*/
+
+
 
     /**
      * Show the form for creating a new resource.
