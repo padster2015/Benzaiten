@@ -204,7 +204,7 @@ function customersController($scope,$http) {
 
 
     $scope.getTemplate = function (employee) {  
-        if (employee.empID === $scope.selected.empID){  
+        if (data.ID === $scope.selected.ID){  
             return 'edit';  
         }  
         else return 'display';  
@@ -217,7 +217,7 @@ function customersController($scope,$http) {
     
 
     $scope.editEmployee = function (employee) {  
-        $scope.selected = angular.copy(employee);  
+        $scope.selected = angular.copy(ID);  
     };   
 }
 </script>
