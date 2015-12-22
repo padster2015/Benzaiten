@@ -64,7 +64,7 @@ h1{
     <img src="http://marketing.rakuten.com/img/common/logo/2.gif" width="150"   align="absmiddle" style="float:left;">
     
     
-    <h1 style="float:left;margin-top:11px;">Rakuten Marketing Translation Platform</h1> :: <h2>Benzatain</h2>
+    <h1 style="float:left;margin-top:11px;">Translation Platform</h1> :: <h2>Benzatain</h2>
 
     
     <div id="controllers">
