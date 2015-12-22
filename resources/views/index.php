@@ -201,7 +201,7 @@ function queryParams() {
 
 <script src="http://192.168.99.100:32786/app/js/extensions/export/bootstrap-table-export.js"></script>
     <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
-
+<script src="app/js/extensions/editable/bootstrap-table-editable.js"></script>
 <script>
 function customersController($scope,$http) {
             
