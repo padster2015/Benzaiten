@@ -72,23 +72,7 @@ td {
             </div>
             
 
-<table style="width:960px !important"  data-toolbar="#toolbar"
-           data-search="true"
-           data-show-refresh="true"
-           data-show-toggle="true"
-           data-show-columns="true"
-           data-show-export="true"
-           data-detail-view="true"
-           data-detail-formatter="detailFormatter"
-           data-minimum-count-columns="2"
-           data-show-pagination-switch="true"
-           data-pagination="true"
-           data-id-field="id"
-           data-page-list="[10, 25, 50, 100, ALL]"
-           data-show-footer="false"
-           data-side-pagination="server"
-           data-url="/examples/bootstrap_table/data"
-           data-response-handler="responseHandler">>
+<table style="width:960px !important">
                 <thead>
                     <tr>
                         <th width="5%" data-sortable="true">ID</th>
@@ -102,15 +86,34 @@ td {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="x in names">
+                    <tr ng-repeat="x in names" ng-include="getTemplate(employee)">
+                       <script type="text/ng-template" id="display">   
                         <td width="5%"><strong>{{ x.ID }}</strong></td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.French }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
                         <td>
+                             <button type="button" class="btn btn-primary" ng-click="editEmployee(employee)">Edit</button>   
                       <button class="edit btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">edit Word</button>
                         </td>
+                        </script>
+                           <script type="text/ng-template" id="edit"> 
+                             <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.French }}</td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
+                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
+                        <td>  
+      <select class="form-control input-sm" ng-model=employee.active>  
+        <option value='1'>Yes</option>  
+        <option value='0'>No</option>  
+      </select>  
+    </td>  
+    <td>  
+     <button type="button" class="btn btn-primary" ng-click="updateEmployee(employee)">Save</button>  
+     <button type="button" class="btn btn-danger" ng-click="reset()">Cancel</button>  
+    </td>  
+   </script>
                     </tr>
                 </tbody>
             </table>
@@ -198,8 +201,24 @@ function customersController($scope,$http) {
             $http.get('http://192.168.99.100:32786/api/v1/words', 
             {cache: false}).success(function(data){$scope.names = data;});
             
+
+
+    $scope.getTemplate = function (employee) {  
+        if (employee.empID === $scope.selected.empID){  
+            return 'edit';  
+        }  
+        else return 'display';  
+    };   
+
+    $scope.reset = function () {  
+       $scope.selected = {};  
+    }; 
             
     
+
+    $scope.editEmployee = function (employee) {  
+        $scope.selected = angular.copy(employee);  
+    };   
 }
 </script>
  <script src="app/app.js"></script>
