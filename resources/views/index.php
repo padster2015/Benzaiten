@@ -44,12 +44,14 @@ body {
     font-weight:200;
 }
 
-h1 h2{
+h2{
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight:400;
+}
 
-        font-weight:400;
-
-
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:400;
 }
 </style>
     </head>
