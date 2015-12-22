@@ -71,6 +71,9 @@
        data-show-refresh="true"
        data-show-toggle="true"
        data-show-columns="true"
+        data-show-export="true"
+         data-click-to-select="true"
+               data-toolbar="#toolbar"
        data-query-params="queryParams"
               data-pagination="true"
        data-url="http://192.168.99.100:32786/api/v1/words/show/50">
@@ -160,6 +163,16 @@ $('.edit').click(function(){
 $('#myModal').modal('show')
 });
 
+    var $table = $('#table');
+    $(function () {
+        $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('refreshOptions', {
+                exportDataType: $(this).val()
+            });
+        });
+    })  
+
+
 
 
 function queryParams() {
@@ -185,7 +198,8 @@ function queryParams() {
 <!-- Latest compiled and minified Locales -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/locale/bootstrap-table-zh-CN.min.js"></script>
 
-
+<script src="../assets/bootstrap-table/src/extensions/export/bootstrap-table-export.js"></script>
+    <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
 
 <script>
 function customersController($scope,$http) {
