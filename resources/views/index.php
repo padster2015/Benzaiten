@@ -86,34 +86,15 @@ td {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="x in names" ng-include="getTemplate(employee)">
-                       <script type="text/ng-template" id="display">   
+                    <tr ng-repeat="x in names">
                         <td width="5%"><strong>{{ x.ID }}</strong></td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.French }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
                         <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
                         <td>
-                             <button type="button" class="btn btn-primary" ng-click="editEmployee(employee)">Edit</button>   
                       <button class="edit btn btn-primary btn-xs" data-toggle="modal" onclick="#myModal">edit Word</button>
                         </td>
-                        </script>
-                           <script type="text/ng-template" id="edit"> 
-                             <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Source }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.French }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.German }}</td>
-                        <td width="200" style="WORD-BREAK:BREAK-ALL;">{{ x.Japanese }}</td>
-                        <td>  
-      <select class="form-control input-sm" ng-model=employee.active>  
-        <option value='1'>Yes</option>  
-        <option value='0'>No</option>  
-      </select>  
-    </td>  
-    <td>  
-     <button type="button" class="btn btn-primary" ng-click="updateEmployee(employee)">Save</button>  
-     <button type="button" class="btn btn-danger" ng-click="reset()">Cancel</button>  
-    </td>  
-   </script>
                     </tr>
                 </tbody>
             </table>
@@ -201,24 +182,8 @@ function customersController($scope,$http) {
             $http.get('http://192.168.99.100:32786/api/v1/words', 
             {cache: false}).success(function(data){$scope.names = data;});
             
-
-
-    $scope.getTemplate = function (words) {  
-        if (names.ID === $scope.selected.ID){  
-            return 'edit';  
-        }  
-        else return 'display';  
-    };   
-
-    $scope.reset = function () {  
-       $scope.selected = {};  
-    }; 
             
     
-
-    $scope.editEmployee = function (words) {  
-        $scope.selected = angular.copy(ID);  
-    };   
 }
 </script>
  <script src="app/app.js"></script>
