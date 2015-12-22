@@ -179,7 +179,7 @@ $('#myModal').modal('show')
 function customersController($scope,$http) {
             
             
-            $http.get('http://192.168.99.100:32786/api/v1/words', 
+            $http.get('http://192.168.99.100:32786/api/v1/words/show/50', 
             {cache: false}).success(function(data){$scope.names = data;});
             
             
