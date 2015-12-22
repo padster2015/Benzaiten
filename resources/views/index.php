@@ -28,6 +28,15 @@
         <!-- CSS code from Bootply.com editor -->
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="app/css/bootstrap-table.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="app/js/bootstrap-table.js"></script>
+
+
+ 
      <style>
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -193,11 +202,7 @@ function queryParams() {
    
          <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script> 
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="app/css/bootstrap-table.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="app/js/bootstrap-table.js"></script>
 
 <!-- Latest compiled and minified Locales 
 <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/locale/bootstrap-table-zh-CN.min.js"></script>
