@@ -1771,7 +1771,7 @@ textarea.input-lg, select.input-lg[multiple] {
 }
 .btn-primary {
     background-color: #b90000;
-    border-color: #357ebd;
+    border-color: #9a0202;
     color: #fff;
 	border-radius:0px;
 }
@@ -1785,7 +1785,7 @@ textarea.input-lg, select.input-lg[multiple] {
 }
 .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary.active {
     background-color: #b90000;
-    border-color: #357ebd;
+    border-color: #9a0202;
 }
 .btn-primary .badge {
     background-color: #fff;
