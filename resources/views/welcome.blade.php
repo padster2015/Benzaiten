@@ -4,7 +4,7 @@
         <title>Benzaiten</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css" type="text/css" rel="stylesheet">
         <style>
             html, body {
                 height: 100%;
@@ -33,12 +33,16 @@
             .title {
                 font-size: 96px;
             }
+            a{
+                text-decoration: none;
+                
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Benzaiten 1</div>
+                <div class="animated infinite pulse title"><a href="/benzaiten">Benzaiten 1</a></div>
             </div>
         </div>
     </body>
