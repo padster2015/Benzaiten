@@ -88,7 +88,7 @@ h1{
 </div>-->
 
 
-<table id="grid" data-toggle="table"
+<table id="example2-grid" data-toggle="table"
  data-sort-name="ID"
        data-sort-order="desc"
        data-search="true"
@@ -114,7 +114,7 @@ h1{
 </table>
 
 
-<ul id="example3-context-menu" class="dropdown-menu">
+<ul id="example2-context-menu" class="dropdown-menu">
     <li data-item="edit"><a>Edit</a></li>
     <li data-item="delete"><a>Delete</a></li>
     <li data-item="action1"><a>Action Here</a></li>
@@ -122,16 +122,22 @@ h1{
 </ul>
 
 <script>
-      $(function() {
-          $('#grid').bootstrapTable({
-              contextMenu: '#context-menu',
-              onContextMenuItem: function(row, $el){
-                  if($el.data("item") == "edit"){
-                      alert(row.itemid);
-                  }
-              }
-          });
-      });
+   $('#example2-grid').bootstrapTable({
+    contextMenu: '#example2-context-menu',
+    contextMenuButton: '.example2-button',
+    onContextMenuItem: function(row, $el){
+        if($el.data("item") == "edit"){
+            alert("Edit: " + row.itemid + ' ' + row.name + ' ' + row.price);
+        } else if($el.data("item") == "delete"){
+            alert("Delete: " + row.itemid + ' ' + row.name + ' ' + row.price);
+        } else if($el.data("item") == "action1"){
+            alert("Action1: " + row.itemid + ' ' + row.name + ' ' + row.price);
+        } else if($el.data("item") == "action2"){
+            alert("Action2: " + row.itemid + ' ' + row.name + ' ' + row.price);
+        }
+    }
+});
+
     </script>
 
             <!-- End of Table-to-load-the-data Part -->
