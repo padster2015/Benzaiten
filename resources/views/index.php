@@ -62,7 +62,11 @@
             
 
 <table data-toggle="table" data-sort-name="ID"
-       data-sort-order="desc" data-show-columns="true"
+       data-sort-order="desc"
+       data-search="true"
+       data-show-refresh="true"
+       data-show-toggle="true"
+       data-show-columns="true"
        data-url="http://192.168.99.100:32786/api/v1/words/show/50">
     <thead>
     <tr>
