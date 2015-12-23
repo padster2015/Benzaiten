@@ -51,7 +51,7 @@
     <img src="http://marketing.rakuten.com/img/common/logo/2.gif" width="150"   align="absmiddle" style="float:left;">
     
     
-    <h1 style="float:right;margin-top:11px;">Translation Platform</h1>
+    <h1 style="float:right;margin-top:11px;font-size:24px;">Translation Platform</h1>
 
     </header>
    
