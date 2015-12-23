@@ -32,6 +32,18 @@ class Words extends Controller
      
                 $phrases = DB::table('Dictionary')->select('ID','Source', $lang)->get();
 
+               /* $to_be_done = DB::query(SELECT `Master`.Source, 
+    `Master`.ID, 
+    $lang.Target, 
+    $lang.Last_edit_by, 
+    $lang.Date_Time_Edit, 
+    $lang.Previous_Edit
+FROM `Master` INNER JOIN $lang ON `Master`.ID = $lang.ID
+WHERE `$lang`.`Target` = '' 
+)->get();*/
+
+
+
         echo json_encode($phrases,JSON_NUMERIC_CHECK);
 
 
