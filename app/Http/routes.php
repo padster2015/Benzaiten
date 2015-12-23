@@ -25,6 +25,8 @@ Route::get('/benzaiten', function () {
 
 Route::get('/api/v1/words/show/{limit}', 'Words@index');
 
+Route::get('/api/v1/words/lang/{lang}', 'Words@language');
+
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController',

@@ -26,11 +26,11 @@ class Words extends Controller
                     //return view('user.index', ['users' => $users]);
           }
 
-/*
- public function index($limit)
+
+ public function language($lang)
     {
      
-                $phrases = DB::table('Dictionary')->select('ID','Source','French','German','Japanese')->take($limit)->get();
+                $phrases = DB::table('Dictionary')->select('ID','Source', $lang)->get();
 
         echo json_encode($phrases,JSON_NUMERIC_CHECK);
 
@@ -39,8 +39,6 @@ class Words extends Controller
                     //return view('user.index', ['users' => $users]);
           }
 
-
-*/
 
 
 
