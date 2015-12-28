@@ -27,13 +27,7 @@ Route::get('/api/v1/words/show/{limit}', 'Words@index');
 
 Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 
-//Route::POST('/api/v1/words/save/{word}', 'Words@create');
-
-Route::post('/api/v1/words/save/', function() 
-{
-    echo 'POST login requests will be handled here.';
-});
-
+Route::POST('/api/v1/words/save/{word}', 'Words@create');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
