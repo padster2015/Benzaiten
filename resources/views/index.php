@@ -116,7 +116,7 @@ height:500px !important;
                         <div class="modal-body">
                             <form name="frmEmployees" class="form-horizontal">
 
-                                        <input type="textarea" multi-lines="5" class="form-control has-error" id="word" name="word" placeholder="Word in English" value="" >
+                                        <input type="textarea"  rows="8" cols="50"  class="form-control has-error" id="word" name="word" placeholder="Word in English" value="" >
                                     
                                                                 
                                         <input type="dropdown" class="form-control" id="platform" name="platform" placeholder="Enter Platform " value="1" >
