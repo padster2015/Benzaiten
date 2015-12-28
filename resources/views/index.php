@@ -114,37 +114,25 @@ height:500px !important;
                             <h4 class="modal-title" id="myModalLabel">Add new translation</h4>
                         </div>
                         <div class="modal-body">
-                            <form name="frmEmployees" class="form-horizontal" novalidate="">
+                            <form name="frmEmployees" class="form-horizontal">
 
-                                <div class="form-group error">
                                     <label for="inputEmail3" class="col-sm-3 control-label">New Word or Phrase</label>
-                                    <div class="col-sm-9">
-                                        <input type="textarea" class="form-control has-error" id="word" name="word" placeholder="Word in English" value="" 
-                                        ng-model="word.phrase" ng-required="true">
-                                        <span class="help-inline" 
-                                        ng-show="frmEmployees.name.$invalid && frmEmployees.name.$touched">Phrase field is required</span>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
+                                        <input type="textarea" class="form-control has-error" id="word" name="word" placeholder="Word in English" value="" >
+                                        <span class="help-inline">Phrase field is required</span>
+                                    
+                               
                                     <label for="inputEmail3" class="col-sm-3 control-label">Platform</label>
-                                    <div class="col-sm-9">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Platform " value="1" 
-                                        ng-model="employee.email" ng-required="true">
-                                        <span class="help-inline" 
-                                        ng-show="frmEmployees.email.$invalid && frmEmployees.email.$touched">Valid Email field is required</span>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
+                                    
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Platform " value="1" >
+                                        <span class="help-inline">Valid Email field is required</span>
+                                    
+                            
                                     <label for="inputEmail3" class="col-sm-3 control-label">Product</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="contact_number" name="contact_number" placeholder="Product Name" value="1" 
-                                        ng-model="employee.contact_number" ng-required="true">
-                                    <span class="help-inline" 
-                                        ng-show="frmEmployees.contact_number.$invalid && frmEmployees.contact_number.$touched">Product Name field is required</span>
-                                    </div>
-                                </div>
+                                    
+                                        <input type="text" class="form-control" id="contact_number" name="contact_number" placeholder="Product Name" value="1" >
+                                    <span class="help-inline">Product Name field is required</span>
+                                  
+                            <button type="button" class="btn btn-primary" id="btn-save">Add Word</button>
 
                             </form>
                         </div>
@@ -153,7 +141,6 @@ height:500px !important;
 
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" id="btn-save" ng-click="save(modalstate, id)" ng-disabled="frmEmployees.$invalid">Add Word</button>
                         </div>
                     </div>
                 </div>
