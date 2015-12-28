@@ -19,6 +19,11 @@ Route::get('/benzaiten', function () {
     return view('index');
 });
 
+Route::get('/translations', function () {
+    return view('pages.words');
+});
+
+
 
 
 //Route::get('/api/v1/words/', 'Words@index');

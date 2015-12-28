@@ -4412,6 +4412,18 @@ font-family: 'Lato', sans-serif;
 }
 
 
+.navbar-default {
+    background-color: #FFF !important;
+}
+
+.modal-content{
+    height:100%;
+    width:100%;
+}
+#word{
+    color:#000 !important;
+}
+
 
 
 /* collapsed sidebar styles */
