@@ -44,6 +44,7 @@ class Words extends Controller
        //$SourceInput = $request->Source;
 
 //        DB::table('Master')->insert(['Source' => '$SourceInput']);
+        DB::table('Master')->insert(['Source' => 'Insert Test']);
     }
 
     /**
@@ -90,7 +91,7 @@ class Words extends Controller
     {
        /* DB::table('$language')
             ->where('ID', $ID)
-            ->update(['Target' = '$target']);
+            ->update(['Target' = '$target']); */
     }
 
     /**
