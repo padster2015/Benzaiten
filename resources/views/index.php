@@ -119,7 +119,7 @@ height:500px !important;
                         <div class="modal-body">
                             <form name="frmEmployees" class="form-horizontal">
 
-                                        <textarea  rows="8" cols="50"  id="word" name="word" placeholder="Word in English">
+                                        <textarea  rows="8" cols="80"  id="word" name="word" placeholder="Word in English">
                                             
                                         </textarea>
                                     
