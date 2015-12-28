@@ -10,14 +10,11 @@
         @include('includes.header')
     </header>
 
-    <div id="main" class="row">
-
         <!-- main content -->
         <div id="content" class="col-md-8">
             @yield('content')
         </div>
 
-    </div>
 
     <!-- sidebar content -->
         <div id="sidebar" class="col-md-4">
