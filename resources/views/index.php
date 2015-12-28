@@ -119,9 +119,7 @@
                         <div class="modal-body">
                             <form name="frmEmployees" class="form-horizontal">
 
-                                        <textarea  rows="4" cols="75"  id="word" name="word" placeholder="Word in English">
-                                            
-                                        </textarea>
+                                        <textarea autofocus wrap="hard" rows="4" cols="75"  id="word" name="word" required> </textarea>
                                     
                                                                 
                                         <input type="dropdown" class="form-control" id="platform" name="platform" placeholder="Enter Platform " value="1" >
