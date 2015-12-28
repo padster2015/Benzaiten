@@ -78,7 +78,7 @@
     Here is the result of success or fail
 </div>-->
 
-<button id="btn-add" class="btn btn-primary btn-xs" ng-click="toggle('add', 0)">Add New Word</button>
+<button id="btn-add" class="btn btn-primary btn-xs">Add New Word</button>
 <table id="example2-grid" data-toggle="table"
  data-sort-name="ID"
        data-sort-order="asc"
@@ -119,7 +119,7 @@
                         <div class="modal-body">
                             <form name="frmEmployees" class="form-horizontal">
 
-                                        <textarea autofocus wrap="hard" rows="4" cols="75"  id="word" name="word" required> </textarea>
+                                        <textarea autofocus wrap="hard" rows="4" cols="75"  id="word" name="word" required placeholder="Describe yourself here..."> </textarea>
                                     
                                                                 
                                         <input type="dropdown" class="form-control" id="platform" name="platform" placeholder="Enter Platform " value="1" >
