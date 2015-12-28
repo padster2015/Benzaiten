@@ -106,7 +106,7 @@
     </thead>
 </table>
 
-
+<div id='response'></div>
             <!-- End of Table-to-load-the-data Part -->
             <!-- Modal (Pop up when detail button clicked) -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -117,7 +117,7 @@
                             <h4 class="modal-title" id="myModalLabel">Add new translation</h4>
                         </div>
                         <div class="modal-body">
-                            <form name="frmEmployees" class="form-horizontal">
+                            <form name="frmEmployees" class="form-horizontal" action="" id='addwordmodal'>
 
                                         <textarea autofocus wrap="hard" rows="4" cols="75"  id="word" name="word" required placeholder="Describe yourself here..."> </textarea>
                                     
@@ -164,38 +164,40 @@ Legal stuff • copyright 2015
 
 // post
 
-$(function() {
-
-    $('.document').on('click', '.ajax', function(e) {
-        e.preventDefault();
-
-        // ajax request
+$(document).ready(function(){
+    $('#addwordmodal').submit(function(){
+     
+        // show that something is loading
+        $('#response').html("<b>Loading response...</b>");
+         
+        /*
+         * 'post_receiver.php' - where you will pass the form data
+         * $(this).serialize() - to easily read form data
+         * function(data){... - data contains the response from post_receiver.php
+         */
         $.ajax({
-            async: true,
-            cache: false,
-            type: 'post',
-            url: '/echo/html/',
-            data: {
-                html: '<p>This is echoed the response in HTML format</p>',
-                delay: 1
-            },
-            dataType: 'html',
-            beforeSend: function() {
-                console.log('Fired prior to the request');
-            },
-            success: function(data) {
-                console.log('Fired when the request is successfull');
-                $('.document').append(data);
-            },
-            complete: function() {
-                console.log('Fired when the request is complete');
-            }
+            type: 'POST',
+            url: 'http://192.168.99.100:32779/api/v1/words/save/', 
+            data: $(this).serialize()
+        })
+        .done(function(data){
+             
+            // show the response
+            $('#response').html(data);
+             
+        })
+        .fail(function() {
+         
+            // just in case posting your form failed
+            alert( "Posting failed." );
+             
         });
-
+ 
+        // to prevent refreshing the whole page page
+        return false;
+ 
     });
-
 });
-
 //
 
 
