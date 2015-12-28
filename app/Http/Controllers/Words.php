@@ -41,9 +41,9 @@ class Words extends Controller
      */
     public function create()
     {
-       $SourceInput = $request->Source;
+       //$SourceInput = $request->Source;
 
-        DB::table('Master')->insert(['Source' => '$SourceInput']);
+//        DB::table('Master')->insert(['Source' => '$SourceInput']);
     }
 
     /**
