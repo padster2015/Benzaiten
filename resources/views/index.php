@@ -41,7 +41,9 @@
     background-color: #FFF !important;
 }
 
-
+.modal-content{
+    height:400px;
+}
 #word{
     color:#000 !important;
 }
