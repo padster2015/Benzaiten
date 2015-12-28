@@ -40,6 +40,10 @@
 .navbar-default {
     background-color: #FFF !important;
 }
+.modal-content{
+height:500px !important;
+}
+}
 </style>
     </head>
         
@@ -107,7 +111,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                            <h4 class="modal-title" id="myModalLabel">{{form_title}}</h4>
+                            <h4 class="modal-title" id="myModalLabel">Add new translation</h4>
                         </div>
                         <div class="modal-body">
                             <form name="frmEmployees" class="form-horizontal" novalidate="">
