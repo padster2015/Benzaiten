@@ -42,7 +42,7 @@
 }
 
 .modal-content{
-    height:400px;
+    height:100%;
 }
 #word{
     color:#000 !important;
