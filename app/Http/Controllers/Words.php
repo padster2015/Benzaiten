@@ -87,9 +87,11 @@ class Words extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $ID,$language,$target)
     {
-        //
+        DB::table('$language')
+            ->where('ID', $ID)
+            ->update(['Target' = '$target']);
     }
 
     /**

@@ -71,7 +71,7 @@
     Here is the result of success or fail
 </div>-->
 
-
+<button id="btn-add" class="btn btn-primary btn-xs" ng-click="toggle('add', 0)">Add New Word</button>
 <table id="example2-grid" data-toggle="table"
  data-sort-name="ID"
        data-sort-order="asc"
