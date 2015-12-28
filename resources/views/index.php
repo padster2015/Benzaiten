@@ -119,7 +119,7 @@ height:500px !important;
                                 <div class="form-group error">
                                     <label for="inputEmail3" class="col-sm-3 control-label">New Word or Phrase</label>
                                     <div class="col-sm-9">
-                                        <input type="textarea" class="form-control has-error" id="word" name="word" placeholder="Word in English" value="{{name}}" 
+                                        <input type="textarea" class="form-control has-error" id="word" name="word" placeholder="Word in English" value="" 
                                         ng-model="word.phrase" ng-required="true">
                                         <span class="help-inline" 
                                         ng-show="frmEmployees.name.$invalid && frmEmployees.name.$touched">Phrase field is required</span>
@@ -129,7 +129,7 @@ height:500px !important;
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-sm-3 control-label">Platform</label>
                                     <div class="col-sm-9">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Platform " value="{{email}}" 
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Platform " value="1" 
                                         ng-model="employee.email" ng-required="true">
                                         <span class="help-inline" 
                                         ng-show="frmEmployees.email.$invalid && frmEmployees.email.$touched">Valid Email field is required</span>
@@ -139,7 +139,7 @@ height:500px !important;
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-sm-3 control-label">Product</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="contact_number" name="contact_number" placeholder="Product Name" value="{{contact_number}}" 
+                                        <input type="text" class="form-control" id="contact_number" name="contact_number" placeholder="Product Name" value="1" 
                                         ng-model="employee.contact_number" ng-required="true">
                                     <span class="help-inline" 
                                         ng-show="frmEmployees.contact_number.$invalid && frmEmployees.contact_number.$touched">Product Name field is required</span>
