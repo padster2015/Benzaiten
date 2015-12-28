@@ -177,7 +177,7 @@ $(document).ready(function(){
          */
         $.ajax({
             type: 'POST',
-            url: 'http://192.168.99.100:32779/api/v1/words/save/', 
+            url: 'http://192.168.99.100:32779/api/v1/save', 
             data: $(this).serialize()
         })
         .done(function(data){
