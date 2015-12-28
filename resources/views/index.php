@@ -116,21 +116,12 @@ height:500px !important;
                         <div class="modal-body">
                             <form name="frmEmployees" class="form-horizontal">
 
-                                    <label for="inputEmail3" class="col-sm-3 control-label">New Word or Phrase</label>
-                                        <input type="textarea" class="form-control has-error" id="word" name="word" placeholder="Word in English" value="" >
-                                        <span class="help-inline">Phrase field is required</span>
+                                        <input type="textarea" multi-lines="5" class="form-control has-error" id="word" name="word" placeholder="Word in English" value="" >
                                     
-                               
-                                    <label for="inputEmail3" class="col-sm-3 control-label">Platform</label>
-                                    
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Platform " value="1" >
-                                        <span class="help-inline">Valid Email field is required</span>
-                                    
-                            
-                                    <label for="inputEmail3" class="col-sm-3 control-label">Product</label>
-                                    
-                                        <input type="text" class="form-control" id="contact_number" name="contact_number" placeholder="Product Name" value="1" >
-                                    <span class="help-inline">Product Name field is required</span>
+                                                                
+                                        <input type="dropdown" class="form-control" id="platform" name="platform" placeholder="Enter Platform " value="1" >
+                                                                        
+                                        <input type="dropdown" class="form-control" id="product" name="product" placeholder="Product Name" value="1" >
                                   
                             <button type="button" class="btn btn-primary" id="btn-save">Add Word</button>
 
