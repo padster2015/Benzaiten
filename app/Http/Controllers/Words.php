@@ -21,9 +21,6 @@ class Words extends Controller
 
         echo json_encode($phrases,JSON_NUMERIC_CHECK);
 
-
-
-                    //return view('user.index', ['users' => $users]);
           }
 
 
@@ -89,9 +86,9 @@ class Words extends Controller
      */
     public function update(Request $request, $ID,$language,$target)
     {
-        DB::table('$language')
+       /* DB::table('$language')
             ->where('ID', $ID)
-            ->update(['Target' = '$target']);
+            ->update(['Target' = '$target']); */
     }
 
     /**
