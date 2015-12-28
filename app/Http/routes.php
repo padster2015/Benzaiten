@@ -27,7 +27,7 @@ Route::get('/api/v1/words/show/{limit}', 'Words@index');
 
 Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 
-Route::post('/api/v1/words/save/', 'Words@create');
+Route::post('/api/v1/words/save/{word}', 'Words@create');
 
 
 Route::controllers([
