@@ -43,6 +43,9 @@
 .modal-content{
 height:500px !important;
 }
+
+#word{
+    color:#000 !important;
 }
 </style>
     </head>
@@ -116,7 +119,7 @@ height:500px !important;
                         <div class="modal-body">
                             <form name="frmEmployees" class="form-horizontal">
 
-                                        <textarea  rows="8" cols="50"  class="form-control has-error" id="word" name="word" placeholder="Word in English" value="">
+                                        <textarea  rows="8" cols="50"  class="form-control has-error" id="word" name="word" placeholder="Word in English">
                                             
                                         </textarea>
                                     
