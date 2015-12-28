@@ -11,9 +11,8 @@
     </header>
 
         <!-- main content -->
-        <div id="content" class="col-md-8">
             @yield('content')
-        </div>
+   
 
 
     <!-- sidebar content -->
