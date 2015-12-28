@@ -123,8 +123,7 @@ height:500px !important;
                                                                         
                                         <input type="dropdown" class="form-control" id="product" name="product" placeholder="Product Name" value="1" >
                                   
-                            <button type="button" class="btn btn-primary" id="btn-save">Add Word</button>
-
+                                                                 <input type="submit" class="btn btn-primary" id="btn-save" value="Add Word">
                             </form>
                         </div>
 
