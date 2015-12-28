@@ -62,9 +62,9 @@ WHERE `$lang`.`Target` = ''
     public function create()
     {
         DB::table('Master')->insert(
-    ['Source' => 'Insert Test']
-);
-    }
+    ['Source' => 'Insert Test'] );
+
+return 'Saved';    }
 
     /**
      * Store a newly created resource in storage.
