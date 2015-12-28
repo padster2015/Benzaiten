@@ -85,7 +85,7 @@
        data-query-params="queryParams"
         data-mobile-responsive="true"
               data-pagination="true"
-       data-url="http://192.168.99.100:32775/api/v1/words/show/50">
+       data-url="http://192.168.99.100:32779/api/v1/words/show/50">
     <thead>
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
@@ -177,6 +177,44 @@ Legal stuff • copyright 2015
 
 </footer>
 <script>
+
+// post
+
+$(function() {
+
+    $('.document').on('click', '.ajax', function(e) {
+        e.preventDefault();
+
+        // ajax request
+        $.ajax({
+            async: true,
+            cache: false,
+            type: 'post',
+            url: '/echo/html/',
+            data: {
+                html: '<p>This is echoed the response in HTML format</p>',
+                delay: 1
+            },
+            dataType: 'html',
+            beforeSend: function() {
+                console.log('Fired prior to the request');
+            },
+            success: function(data) {
+                console.log('Fired when the request is successfull');
+                $('.document').append(data);
+            },
+            complete: function() {
+                console.log('Fired when the request is complete');
+            }
+        });
+
+    });
+
+});
+
+//
+
+
 
 
 

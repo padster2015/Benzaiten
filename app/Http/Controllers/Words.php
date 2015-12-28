@@ -61,7 +61,9 @@ WHERE `$lang`.`Target` = ''
      */
     public function create()
     {
-        //
+        DB::table('Master')->insert(
+    ['Source' => 'Insert Test']
+);
     }
 
     /**
