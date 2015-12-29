@@ -28,6 +28,7 @@
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="app/css/bootstrap-table.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css" type="text/css" rel="stylesheet">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="app/js/bootstrap-table.js"></script>

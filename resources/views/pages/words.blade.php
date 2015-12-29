@@ -40,7 +40,7 @@
     </thead>
 </table>
 
-<div id='response'></div>
+<div  id='response' class="animated fadeIn alert alert-success" role="alert"></div>
             <!-- End of Table-to-load-the-data Part -->
             <!-- Modal (Pop up when detail button clicked) -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
