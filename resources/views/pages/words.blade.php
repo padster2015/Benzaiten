@@ -76,9 +76,7 @@
 
 <script>
 $( "#btn-save" ).click(function() {
-  $( "#response" ).toggle( "slow", function() {
-    // Animation complete.
-  });
+  $( "#response" ).toggle();
 });
 </script>
 @stop
