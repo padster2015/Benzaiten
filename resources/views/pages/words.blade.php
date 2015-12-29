@@ -40,7 +40,6 @@
     </thead>
 </table>
 
-<div  id='response' class="animated fadeIn alert alert-success" role="alert" style="display: none"></div>
             <!-- End of Table-to-load-the-data Part -->
             <!-- Modal (Pop up when detail button clicked) -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -78,5 +77,9 @@
 $( "#btn-save" ).click(function() {
   $( "#response" ).toggle("slow");
 });
+
+$(".alert-message").alert();
+window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
+
 </script>
 @stop
