@@ -74,4 +74,11 @@
  </div>
  </div>
 
+<script>
+$( "#btn-save" ).click(function() {
+  $( "#response" ).toggle( "slow", function() {
+    // Animation complete.
+  });
+});
+</script>
 @stop
