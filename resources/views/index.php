@@ -93,7 +93,7 @@
        data-query-params="queryParams"
         data-mobile-responsive="true"
               data-pagination="true"
-       data-url="http://192.168.99.100:32779/api/v1/words/show/50">
+       data-url="http://192.168.99.100:32771/api/v1/words/show/50">
     <thead>
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
@@ -145,9 +145,15 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>              
+              <li><a href="#">French</a></li>
+              <li><a href="#">German</a></li>
+              <li><a href="#">Japanese</a></li>
+<li><a href="#">Brazil</a></li>
+<li><a href="#">Advertiser Dashboard</a></li>
+<li><a href="#">Publisher Dashboard</a></li>
+<li><a href="#">Search</a></li>
+<li><a href="#">Attribution</a></li>
+<li><a href="#">Display</a></li>              
             </ul>
         </div>
     
