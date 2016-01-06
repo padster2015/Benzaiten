@@ -65,9 +65,14 @@
    
        <div class="container animated fadeIn">
       <div class="row row-offcanvas row-offcanvas-left">
-        
-
+  <?php      
+try{
+   DB::connection()->getDatabaseName();
+}catch(Exception $e){
+   echo $e->getMessage();
+}
   
+  ?>
 
 <div class="app-content" id="data-items" ng-app="" ng-controller="customersController"> 
        <div class="grid" >   
@@ -93,7 +98,7 @@
        data-query-params="queryParams"
         data-mobile-responsive="true"
               data-pagination="true"
-       data-url="http://192.168.99.100:32771/api/v1/words/show/50">
+       data-url="http://10.130.132.81:1983/api/v1/words/show/50">
     <thead>
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
