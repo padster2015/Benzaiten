@@ -74,6 +74,24 @@
  </div>
 
 <script>
+  function editword() {
+          	var wordID = document.getElementById("wordID").innerHTML
+            var contentword = Wordcell;
+			var language = document.getElementById("languageID").innerHtml
+			var platforom = 'Affiliate'
+			var product = document.getElementById("productID").innerhtml
+         
+        $.post("/api/v1/words/save/",
+        {
+        id: wordID,  
+        EditWord: contentword
+        },
+        function(data,status){
+        });
+
+</script>
+
+<script>
 $( "#btn-save" ).click(function() {
   $( "#response" ).toggle("slow");
 });
