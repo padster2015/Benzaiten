@@ -74,17 +74,42 @@
  </div>
 
 <script>
+<!--send data to api -->
+// save word
+function addWord() {
+          	
+            var contentword = phrase;
+			var language = document.getElementById("languageID").innerHtml
+			var platform = 'Affiliate'
+			var product = document.getElementById("productID").innerhtml
+         
+        $.post("/api/v1/words/add/",
+        {  
+        AddWord: contentword,
+platforms: platform,
+		products: product,
+languages: language
+        },
+        function(data,status){
+        });
+
+
+
+
+// edit
   function editword() {
           	var wordID = document.getElementById("wordID").innerHTML
             var contentword = Wordcell;
 			var language = document.getElementById("languageID").innerHtml
-			var platforom = 'Affiliate'
+			var platform = 'Affiliate'
 			var product = document.getElementById("productID").innerhtml
          
         $.post("/api/v1/words/save/",
         {
         id: wordID,  
-        EditWord: contentword
+        EditWord: contentword,
+		platforms: platform,
+		products: product
         },
         function(data,status){
         });
