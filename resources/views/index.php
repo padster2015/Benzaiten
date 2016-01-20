@@ -95,7 +95,7 @@
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
         <th data-field="Source">English Word</th>
-        <th data-field="Brazil" data-editable="true">Brazilian Portuguese</th>
+        <th data-field="Brazil" data-editable="true" data-pk="ID">Brazilian Portuguese</th>
         <th data-field="French" data-editable="true">French</th>
         <th data-field="German" data-editable="true">German</th>
         <th data-field="Japanese" data-editable="true" data-visible="false">Japanese</th>
