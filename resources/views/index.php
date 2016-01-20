@@ -172,7 +172,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: 'POST',
-            url: '/api/v1/save', 
+            url: '/api/v1/words/save/', 
             data: $(this).serialize()
         })
         .done(function(data){
