@@ -65,14 +65,6 @@
    
        <div class="container animated fadeIn">
       <div class="row row-offcanvas row-offcanvas-left">
-  <?php      
-try{
-   DB::connection()->getDatabaseName();
-}catch(Exception $e){
-   echo $e->getMessage();
-}
-  
-  ?>
 
 <div class="app-content" id="data-items" ng-app="" ng-controller="customersController"> 
        <div class="grid" >   
@@ -103,7 +95,7 @@ try{
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
         <th data-field="Source">English Word</th>
-                <th data-field="Brazil" data-editable="true">Brazilian Portuguese</th>
+        <th data-field="Brazil" data-editable="true">Brazilian Portuguese</th>
         <th data-field="French" data-editable="true">French</th>
         <th data-field="German" data-editable="true">German</th>
         <th data-field="Japanese" data-editable="true" data-visible="false">Japanese</th>
@@ -171,7 +163,7 @@ Legal stuff • copyright 2015
 
 // post
 
-$(document).ready(function(){
+function save(){
     $('#addwordmodal').submit(function(){
      
         // show that something is loading
@@ -184,7 +176,7 @@ $(document).ready(function(){
          */
         $.ajax({
             type: 'POST',
-            url: 'http://192.168.99.100:32779/api/v1/save', 
+            url: '/api/v1/save', 
             data: $(this).serialize()
         })
         .done(function(data){
@@ -207,6 +199,18 @@ $(document).ready(function(){
 });
 //
 
+
+//Update
+function update(){
+    $('#username').editable({
+                               type:  'text',
+                               pk:    1,
+                               name:  'username',
+                               url:   '/api/v1/update',  
+                               title: 'Enter username'
+                            });
+  }
+//end of update
 
 
 
