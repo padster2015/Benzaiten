@@ -27,11 +27,7 @@ class Words extends Controller
  public function language($lang)
     {
      
-            //    $phrases = DB::table('Dictionary')->select('ID','Source', $lang)->get();
-
-        //echo json_encode($phrases,JSON_NUMERIC_CHECK);
-
-                    //return view('user.index', ['users' => $users]);
+         //
           }
 
     /**
@@ -41,9 +37,6 @@ class Words extends Controller
      */
     public function create()
     {
-       //$SourceInput = $request->Source;
-
-//        DB::table('Master')->insert(['Source' => '$SourceInput']);
         DB::table('Master')->insert(['Source' => 'Insert Test']);
     }
 
@@ -61,12 +54,12 @@ class Words extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $languagr
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($language)
     {
-        //
+        $translations = DB::table($language)->get();
     }
 
     /**
