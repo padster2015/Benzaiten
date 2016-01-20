@@ -198,7 +198,7 @@ $(document).ready(function(){
 
 //Update
 $(document).ready(function(){
-$('.popover-content').submit(function(){
+$('.btn-sm editable-submit').submit(function(){
 
     $.ajax({
                                type:  'text',
