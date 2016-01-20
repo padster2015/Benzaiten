@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/benzaiten', function () {
-    return view('pages.words');
+    return view('index');
 });
 
 Route::get('/translations', function () {
