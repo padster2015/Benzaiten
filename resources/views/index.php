@@ -163,7 +163,7 @@ Legal stuff • copyright 2015
 
 // post
 
-function save(){
+$(document).ready(function(){
     $('#addwordmodal').submit(function(){
      
         // show that something is loading
