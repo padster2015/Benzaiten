@@ -90,7 +90,7 @@
        data-query-params="queryParams"
         data-mobile-responsive="true"
               data-pagination="true"
-       data-url="http://centos7-php7-laravel5-1f58238c.padster83.svc.tutum.io/api/v1/words/show/50">
+       data-url="/api/v1/words/show/50">
     <thead>
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
