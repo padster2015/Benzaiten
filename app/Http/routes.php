@@ -20,7 +20,7 @@ Route::get('/benzaiten', function () {
 });
 
 Route::get('/translations', function () {
-    return view('pages.words');
+    return view('pages.translations');
 });
 
 
