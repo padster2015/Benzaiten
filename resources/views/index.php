@@ -197,17 +197,32 @@ $(document).ready(function(){
 
 
 //Update
-function update(){
-    $('#username').editable({
+$(document).ready(function(){
+$('.popover-content').submit(function(){
+
+    $.ajax({
                                type:  'text',
                                pk:    1,
                                name:  'username',
-                               url:   '/api/v1/update',  
+                               url:   '/api/v1/words/update',  
                                title: 'Enter username'
-                            });
-  }
-//end of update
+    })
+    .done(function(data){
 
+      // show the response
+            $('#response').html(data);
+    })
+    .fail(function() {
+         console.log();
+            // just in case posting your form failed
+            alert( "Posting failed." );
+             
+        });
+ 
+        // to prevent refreshing the whole page page
+        return false;
+      });
+});
 
 
 
@@ -251,13 +266,7 @@ function queryParams() {
 
 </script>
    
-       <!--  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>--> 
 
-
-
-<!-- Latest compiled and minified Locales 
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/locale/bootstrap-table-zh-CN.min.js"></script>
--->
 
 <script src="app/js/extensions/export/bootstrap-table-export.js"></script>
 <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
