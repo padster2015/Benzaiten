@@ -115,7 +115,7 @@
                             <h4 class="modal-title" id="myModalLabel">Add new translation</h4>
                         </div>
                         <div class="modal-body">
-                            <form name="frmEmployees" class="form-horizontal" action="" id='addwordmodal'>
+                            <form name="frmEmployees" onsubmit="completeAndRedirect();" class="form-horizontal" action="" id='addwordmodal'>
 
                                         <textarea autofocus wrap="hard" rows="4" cols="75"  id="word" name="word" required placeholder="Describe yourself here..."> </textarea>
                                     
@@ -169,11 +169,7 @@ $(document).ready(function(){
         // show that something is loading
         $('#response').html("<b>Loading response...</b>");
          
-        /*
-         * 'post_receiver.php' - where you will pass the form data
-         * $(this).serialize() - to easily read form data
-         * function(data){... - data contains the response from post_receiver.php
-         */
+
         $.ajax({
             type: 'POST',
             url: '/api/v1/save', 
@@ -186,7 +182,7 @@ $(document).ready(function(){
              
         })
         .fail(function() {
-         
+         console.log();
             // just in case posting your form failed
             alert( "Posting failed." );
              
