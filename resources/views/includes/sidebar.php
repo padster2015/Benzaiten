@@ -3,9 +3,9 @@
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">French</a></li>
-              <li><a href="#">German</a></li>
-              <li><a href="#">Japanese</a></li> 
-              <li><a href="#">Brazilian</a></li>              
+              <li><a href="/translate/German">German</a></li>
+              <li><a href="/translate/Japanese">Japanese</a></li> 
+              <li><a href="/translate/Brazilian">Brazilian</a></li>              
             </ul>
             <select>
 	<option value="Aff">Affiliate</option>
