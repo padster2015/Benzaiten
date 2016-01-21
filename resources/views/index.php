@@ -223,7 +223,7 @@ $('#myModal').modal('show');
   var $table = $('#table');
   $(function () {
     $('#toolbar').find('select').change(function () {
-console.log('hi');
+
       $table.bootstrapTable('refreshOptions', {
         exportDataType: $(this).val()
       });
