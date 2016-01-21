@@ -43,7 +43,6 @@ $translations_query = DB::table('Dictionary')
     ->where('ID')
     ->where('source')
     ->get();
-        print_r($translations_query);
         echo json_encode($translations_query,JSON_NUMERIC_CHECK);
 
 
