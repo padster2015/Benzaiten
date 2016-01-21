@@ -19,8 +19,8 @@ Route::get('/benzaiten', function () {
     return view('pages.words');
 });
 
-Route::get('/translations', function () {
-    return view('pages.language');
+Route::get('/translate', function () {
+    return view('pages.translated');
 });
 
 
@@ -37,9 +37,4 @@ Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 Route::POST('/api/v1/words/save/', 'Words@update');
 
 Route::POST('/api/v1/words/add/', 'Words@add');
-
-Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
-]);
 
