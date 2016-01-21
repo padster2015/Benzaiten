@@ -161,98 +161,73 @@ Legal stuff • copyright 2015
 </footer>
 <script>
 
-// post
-
-$(document).ready(function(){
-    $('#addwordmodal').submit(function(){
-     
-        // show that something is loading
-        $('#response').html("<b>Loading response...</b>");
-         
-
-        $.ajax({
-            type: 'POST',
-            url: '/api/v1/words/save/', 
-            data: $(this).serialize()
-        })
-        .done(function(data){
-             
-            // show the response
-            $('#response').html(data);
-             
-        })
-        .fail(function() {
-         console.log();
-            // just in case posting your form failed
-            alert( "Posting failed." );
-             
-        });
- 
-        // to prevent refreshing the whole page page
-        return false;
- 
-    });
+// $(document).ready(function(){
+//addwordmodal (submit) event 
+$('#addwordmodal').submit(function(){
+// show that something is loading
+$('#response').html("<b>Loading response...</b>");
+$.ajax({
+type: 'POST',
+url: '/api/v1/words/save/', 
+data: $(this).serialize()
+})
+.done(function(data){
+// show the response
+$('#response').html(data);
+})
+.fail(function() {
+// just in case posting your form failed
+alert( "Posting failed." );
 });
-//
 
+// to prevent refreshing the whole page page
+return false;
+});
 
-//Update
-$(document).ready(function(){
+//Something else
 $('.popover-content').submit(function(){
-
-    $.ajax({
-                               type:  'text',
-                               pk:    1,
-                               name:  'username',
-                               url:   '/api/v1/words/update',  
-                               title: 'Enter username'
-    })
-    .done(function(data){
-
-      // show the response
-            $('#response').html(data);
-    })
-    .fail(function() {
-         console.log();
-            // just in case posting your form failed
-            alert( "Posting failed." );
-             
-        });
- 
-        // to prevent refreshing the whole page page
-        return false;
-      });
+$.ajax({
+type:  'text',
+pk:    1,
+name:  'username',
+url:   '/api/v1/words/update',  
+title: 'Enter username'
+})
+.done(function(data){
+// show the response
+$('#response').html(data);
+})
+.fail(function() {
+console.log();
+// just in case posting your form failed
+alert( "Posting failed." );
 });
 
+// to prevent refreshing the whole page page
+return false;
+});
 
-
-$(document).ready(function() {
-  $('[data-toggle=offcanvas]').click(function() {
+$('[data-toggle=offcanvas]').click(function() {
     $('.row-offcanvas').toggleClass('active');
   });
-});
-
 
 $('#btn-add').click(function(){
-$('#myModal').modal('show')
+$('#myModal').modal('show');
 });
 
 
 $('.edit').click(function(){
-$('#myModal').modal('show')
+$('#myModal').modal('show');
 });
 
-    var $table = $('#table');
-    $(function () {
-        $('#toolbar').find('select').change(function () {
-            $table.bootstrapTable('refreshOptions', {
-                exportDataType: $(this).val()
-            });
-        });
-    })  
-
-
-
+  var $table = $('#table');
+  $(function () {
+    $('#toolbar').find('select').change(function () {
+      $table.bootstrapTable('refreshOptions', {
+        exportDataType: $(this).val()
+      });
+    });
+  });  
 
 function queryParams() {
     return {
@@ -263,6 +238,9 @@ function queryParams() {
         page: 1
     };
 }
+});
+
+
 
 </script>
    
