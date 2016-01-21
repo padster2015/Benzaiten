@@ -16,11 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('/benzaiten', function () {
-    return view('pages.words');
+	return view('pages.words');
 });
 
 Route::get('/translate', function () {
-    return view('pages.translated');
+	return view('index');
 });
 
 
