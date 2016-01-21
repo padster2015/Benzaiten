@@ -40,7 +40,10 @@ class Words extends Controller
  public function language($lang)
     {
      
-         //
+$dictionary = DB::table('Dictionary')->get();
+        
+        echo json_encode($dictionary,JSON_NUMERIC_CHECK);
+        
           }
 
     /**
