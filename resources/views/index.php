@@ -95,7 +95,7 @@
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
         <th data-field="Source">English Word</th>
-        <th data-field="german" data-editable="true" data-visible="true">german</th>
+        <th data-field="German" data-editable="true" data-visible="true">German</th>
     </tr>
     </thead>
 </table>
