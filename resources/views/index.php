@@ -188,6 +188,7 @@ return false;
 window.prepareinput = function(){
 console.log('preparedinput');
 $('.popover-content').submit(function(){
+console.log('submited');
 $.ajax({
 type:  'text',
 pk:    1,
