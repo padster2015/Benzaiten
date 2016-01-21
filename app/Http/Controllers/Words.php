@@ -41,6 +41,7 @@ class Words extends Controller
     {
 $translations_query = DB::table('Dictionary')
     ->select('id','source',$lang)
+    ->where ($lang, '=', '')
     ->get();
         echo json_encode($translations_query,JSON_NUMERIC_CHECK);
 
