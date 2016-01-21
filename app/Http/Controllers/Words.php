@@ -25,7 +25,7 @@ class Words extends Controller
 
 
 
-public function apiservice($lang, $product, $platform, $format)
+/*public function apiservice($lang, $product, $platform, $format)
     {
 
 //query for file
@@ -34,7 +34,7 @@ public function apiservice($lang, $product, $platform, $format)
         
         echo json_encode($apidownload,JSON_NUMERIC_CHECK);
 
-          }
+          }*/
 
 
  public function language($lang)
@@ -93,12 +93,12 @@ public function apiservice($lang, $product, $platform, $format)
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $ID,$language,$target)
-    {
+    //public function update(Request $request, $ID,$language,$target)
+   // {
        /* DB::table('$language')
             ->where('ID', $ID)
             ->update(['Target' = '$target']); */
-    }
+    //}
 
     /**
      * Remove the specified resource from storage.
