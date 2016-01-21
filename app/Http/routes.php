@@ -30,6 +30,8 @@ Route::get('/translations', function () {
 
 Route::get('/api/v1/words/show/{limit}', 'Words@index');
 
+Route::get('/api/v1/words/{lang}/translations/{platform}/{product}/{format}', 'apiservice@index');
+
 Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 
 Route::POST('/api/v1/words/save/', 'Words@update');

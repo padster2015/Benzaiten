@@ -24,6 +24,19 @@ class Words extends Controller
           }
 
 
+
+public function apiservice($lang, $product, $platform, $format)
+    {
+
+//query for file
+     
+        $apidownload = DB::table->where('lang' 'product' 'platform' 'format', $lang $product $platform $fornat) ->get();
+        
+        echo json_encode($apidownload,JSON_NUMERIC_CHECK);
+
+          }
+
+
  public function language($lang)
     {
      
