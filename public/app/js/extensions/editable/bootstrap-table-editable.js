@@ -51,7 +51,7 @@
             column.formatter = function (value, row, index) {
                 var result = _formatter ? _formatter(value, row, index) : value;
 
-                return ['<a href="javascript:prepareinput()"',
+                return ['<a href="javascript:void(0);" onclick="prepareinput();"',
                     ' data-name="' + column.field + '"',
                     ' data-pk="' + row['ID'] + '"',
                     ' data-value="' + result + '"',
