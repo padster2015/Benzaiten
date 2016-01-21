@@ -161,7 +161,7 @@ Legal stuff • copyright 2015
 </footer>
 <script>
 
-// $(document).ready(function(){
+$(document).ready(function(){
 //addwordmodal (submit) event 
 $('#addwordmodal').submit(function(){
 // show that something is loading
