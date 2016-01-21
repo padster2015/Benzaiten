@@ -31,6 +31,9 @@
     <tr>
         <th data-field="ID" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
         <th data-field="Source">English Word</th>
+                <th data-field="Brazil" data-editable="true">Brazilian Portuguese</th>
+        <th data-field="French" data-editable="true">French</th>
+        <th data-field="German" data-editable="true">German</th>
         <th data-field="Japanese" data-editable="true" data-visible="false">Japanese</th>
 
     </tr>
@@ -52,9 +55,9 @@
                                         <textarea autofocus wrap="hard" rows="4" cols="75"  id="word" name="word" required placeholder="Describe yourself here..."> </textarea>
                                     
                                                                 
-                                        <input type="dropdown" class="form-control" id="platform" name="platform" placeholder="Enter Platform " value="RAN" >
+                                        <input type="dropdown" class="form-control" id="platform" name="platform" placeholder="Enter Platform " value="1" >
                                                                         
-                                        <input type="dropdown" class="form-control" id="product" name="product" placeholder="Offers" value="Advertiser Dashboard" >
+                                        <input type="dropdown" class="form-control" id="product" name="product" placeholder="Product Name" value="1" >
                                   
                                         <input type="submit" class="btn btn-primary" id="btn-save" value="Add Word">
                             </form>
@@ -74,17 +77,17 @@
 <!--send data to api -->
 // save word
 function addWord() {
-          	
+            
             var contentword = phrase;
-			var language = document.getElementById("languageID").innerHtml
-			var platform = 'Affiliate'
-			var product = document.getElementById("productID").innerhtml
+      var language = document.getElementById("languageID").innerHtml
+      var platform = 'Affiliate'
+      var product = document.getElementById("productID").innerhtml
          
         $.post("/api/v1/words/add/",
         {  
         AddWord: contentword,
 platforms: platform,
-		products: product,
+    products: product,
 languages: language
         },
         function(data,status){
@@ -95,18 +98,18 @@ languages: language
 
 // edit
   function editword() {
-          	var wordID = document.getElementById("wordID").innerHTML
+            var wordID = document.getElementById("wordID").innerHTML
             var contentword = Wordcell;
-			var language = document.getElementById("languageID").innerHtml
-			var platform = 'Affiliate'
-			var product = document.getElementById("productID").innerhtml
+      var language = document.getElementById("languageID").innerHtml
+      var platform = 'Affiliate'
+      var product = document.getElementById("productID").innerhtml
          
         $.post("/api/v1/words/save/",
         {
         id: wordID,  
         EditWord: contentword,
-		platforms: platform,
-		products: product
+    platforms: platform,
+    products: product
         },
         function(data,status){
         });
