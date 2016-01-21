@@ -40,8 +40,8 @@ class Words extends Controller
  public function language($lang)
     {
 $translations_query = DB::table('Dictionary')
-    ->where('ID')
-    ->where('source')
+    ->select('ID')
+    ->select('source')
     ->get();
         echo json_encode($translations_query,JSON_NUMERIC_CHECK);
 
