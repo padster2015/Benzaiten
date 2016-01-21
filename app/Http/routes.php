@@ -19,7 +19,7 @@ Route::get('/benzaiten', function () {
 	return view('pages.words');
 });
 
-Route::get('/translate', function () {
+Route::get('/translate/{lang}', function () {
 	return view('index');
 });
 
