@@ -185,7 +185,7 @@ return false;
 });
 
 //Something else
-function prepareinput(){
+window.prepareinput = function(){
 console.log('preparedinput');
 $('.popover-content').submit(function(){
 $.ajax({
