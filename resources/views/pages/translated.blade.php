@@ -186,31 +186,27 @@ return false;
 
 //Something else
 window.prepareinput = function(){
-$timeout(function(){
-  $('.popover-content').submit(function(){
-  console.log('submited');
-  $.ajax({
-  type:  'text',
-  pk:    1,
-  name:  'username',
-  url:   '/api/v1/words/update',  
-  title: 'Enter username'
-  })
-  .done(function(data){ 
-  // show the response
-  $('#response').html(data);
-  })
-  .fail(function() {
-  console.log();
-  // just in case posting your form failed
-  alert( "Posting failed." );
+  $timeout(function(){
+    $('.popover-content').submit(function(){
+      console.log('submited');
+      $.ajax({
+        type:  'text',
+        pk:    1,
+        name:  'username',
+        url:   '/api/v1/words/update',  
+        title: 'Enter username'
+      })
+      .done(function(data){ 
+        $('#response').html(data);
+      })
+      .fail(function() {
+        console.log('Posting failed');
+      });
+    return false; // to prevent refreshing the whole page page
+    });
   });
+};
 
-  // to prevent refreshing the whole page page
-  return false;
-  });
-}
-}
 
 $('[data-toggle=offcanvas]').click(function() {
     $('.row-offcanvas').toggleClass('active');
