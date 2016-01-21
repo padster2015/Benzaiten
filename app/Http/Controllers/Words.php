@@ -40,14 +40,13 @@ class Words extends Controller
  public function language($lang)
     {
      
-/*
+
 $translations_query = DB::table('Dictionary')->select('ID','source','$lang')->get();
         
         echo json_encode($translations_query,JSON_NUMERIC_CHECK);
-*/
 
 
-                return 'This puppy is an absolute ' . $lang . ' out of ' . $cutelevel;
+
           }
 
     /**
