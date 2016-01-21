@@ -32,10 +32,7 @@ Route::get('/api/v1/words/show/{limit}', 'Words@index');
 
 Route::get('/api/v1/words/{lang}/translations/{platform}/{product}/{format}', 'apiservice@index');
 
-Route::get('/api/v1/words/lang/{lang}', function($lang)
-{
-	return 'this is '. $lang .' of many'.$lang;
-});
+Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 
 Route::POST('/api/v1/words/save/', 'Words@update');
 
