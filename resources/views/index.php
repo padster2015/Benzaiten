@@ -185,6 +185,8 @@ return false;
 });
 
 //Something else
+function prepareinput(){
+console.log('preparedinput');
 $('.popover-content').submit(function(){
 $.ajax({
 type:  'text',
@@ -206,6 +208,8 @@ alert( "Posting failed." );
 // to prevent refreshing the whole page page
 return false;
 });
+
+}
 
 $('[data-toggle=offcanvas]').click(function() {
     $('.row-offcanvas').toggleClass('active');
