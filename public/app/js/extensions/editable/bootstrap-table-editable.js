@@ -50,7 +50,7 @@
             var _formatter = column.formatter;
             column.formatter = function (value, row, index) {
                 var result = _formatter ? _formatter(value, row, index) : value;
-console.log(row,index);2
+
                 return ['<a href="javascript:void(0)"',
                     ' data-name="' + column.field + '"',
                     ' data-pk="' + row['ID'] + '"',
