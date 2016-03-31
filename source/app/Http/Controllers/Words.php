@@ -70,6 +70,9 @@ $translations_query = DB::table('Dictionary')
         //
     }
 
+
+
+
     /**
      * Display the specified resource.
      *
@@ -87,9 +90,20 @@ $translations_query = DB::table('Dictionary')
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $edit)
     {
-        //
+        $ToEdit = request=> $edit => word;
+        $WordId = request=> $edit => id; 
+        $Language = request=> $edit => lang;
+
+
+$EditingWord = DB::table($Language)
+            ->where('ID', $WordId)
+            ->update(['Target' = $ToEdit]);
+
+ ->get();
+        echo json_encode($EditingWord,JSON_NUMERIC_CHECK);
+
     }
 
     /**
@@ -100,10 +114,10 @@ $translations_query = DB::table('Dictionary')
      * @return \Illuminate\Http\Response
      */
     //public function update(Request $request, $ID,$language,$target)
-   // {
-       /* DB::table('$language')
-            ->where('ID', $ID)
-            ->update(['Target' = '$target']); */
+   /** {
+      // DB::table('$language')
+          //  ->where('ID', $ID)
+         //   ->update(['Target' = '$target']); */
     //}
 
     /**

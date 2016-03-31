@@ -55,7 +55,7 @@ Route::get('/api/v1/words/{lang}/translations/{platform}/{product}/{format}', 'a
 
 Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 
-Route::POST('/api/v1/words/save/', 'Words@update');
+Route::POST('/api/v1/words/save/', 'Words@edit');
 
 Route::POST('/api/v1/words/add/', 'Words@add');
 
