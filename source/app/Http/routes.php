@@ -59,3 +59,5 @@ Route::POST('/api/v1/words/save/', 'Words@edit');
 
 Route::POST('/api/v1/words/add/', 'Words@add');
 
+Route::POST('/api/v1/bulk/word/upload/', 'Words@UploadAndInsert');
+
