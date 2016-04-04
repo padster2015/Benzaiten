@@ -67,10 +67,40 @@ $translations_query = DB::table('Dictionary')
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
 
+    public function UploadAndInsert(Request $datain)
+    {
+
+        $file = $request_file->input('filename');
+        $PlatformIn = $request_User->input('platform');
+        $EditBy = $request_User->input('username');
+        $ProductIn = $request_User->input('product');
+
+//read the json file contents
+    $jsondata = file_get_contents('message.json');
+    
+    //convert json object to php associative array
+    $data = json_decode($jsondata, true);
+    
+    //get the employee details
+    $SourceIn = $data['message']['source'];
+    $TargetIn = $data['message']['target'];
+
+    
+    //insert into mysql table
+
+$InsertLoad = DB::table('master')->insert(
+         ['Source' => $SourceIn]);
+         ['Target' => $TargetIn]);
+         ['Platform' => $PlatformIn]);
+         ['Product' => $ProductIn]);
+         ['Last_edit_by' => $EditBy]);
+echo json_encode($InsertLoad,JSON_NUMERIC_CHECK);
+
+    }
 
 
     /**
