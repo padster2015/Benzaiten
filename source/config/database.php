@@ -47,7 +47,7 @@ return [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', '74.208.78.114'),
             'database'  => env('DB_DATABASE', 'Benzaiten'),
-            'username'  => env('DB_USERNAME', 'fitw'),
+            'username'  => env('DB_USERNAME', ''),
             'password'  => env('DB_PASSWORD', 'H097729422a!'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
