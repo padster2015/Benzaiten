@@ -120,7 +120,7 @@ echo json_encode($InsertLoad,JSON_NUMERIC_CHECK);
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Request $edit)
+   /* public function edit(Request $edit)
     {
         $ToEdit = request=> $edit => word;
         $WordId = request=> $edit => id; 
@@ -134,7 +134,8 @@ $EditingWord = DB::table($Language)
  ->get();
         echo json_encode($EditingWord,JSON_NUMERIC_CHECK);
 
-    }
+    }*/
+    
 
     /**
      * Update the specified resource in storage.
