@@ -4,7 +4,7 @@ web:
    - "80:80"
   links:
    - mariadb
-   volumes:
+  volumes:
    - /root/app/Benzaiten/source:/var/www/html
 
 mariadb:
