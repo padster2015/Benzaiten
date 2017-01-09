@@ -71,7 +71,7 @@ $translations_query = DB::table('Dictionary')
     }
 
 
-    public function UploadAndInsert(Request $datain)
+    /*public function UploadAndInsert(Request $datain)
     {
 
         $file = $request_file->input('filename');
