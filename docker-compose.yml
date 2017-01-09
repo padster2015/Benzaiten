@@ -4,19 +4,10 @@ web:
    - "80:80"
   links:
    - mariadb
+   volumes:
+   - /root/app/Benzaiten/source:/var/www/html
 
 mariadb:
   image: mariadb
   ports:
     - "3306:3306"
-
-elk:
-  container_name: elk
-  image: sebp/elk
-  ports:
-    - "5601:5601"
-    - "9200:9200"
-    - "5044:5044"
-    - "5000:5000"
-  links:
-    -  web
