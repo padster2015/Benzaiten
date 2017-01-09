@@ -14,13 +14,13 @@ RUN mv composer.phar /usr/local/bin/composer
 WORKDIR /var/www/html/
 
 
-RUN composer global require "laravel/installer"
+#RUN composer global require "laravel/installer"
 
-RUN export PATH="$PATH:~/.composer/vendor/bin"
-RUN source ~/.bashrc
+#RUN export PATH="$PATH:~/.composer/vendor/bin"
+#RUN source ~/.bashrc
 
 WORKDIR /var/www/html
 
 CMD chmod -R guo+w storage
 CMD chmod -R gu+w storage
-CMD composer install
+#CMD composer install
