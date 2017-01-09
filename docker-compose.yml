@@ -11,3 +11,8 @@ mariadb:
   image: mariadb
   ports:
     - "3306:3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: my-secret-pw
+    MYSQL_DATABASE: dealdispatcher
+    MYSQL_USER: marcomho
+    MYSQL_PASSWORD: H097729422a!
